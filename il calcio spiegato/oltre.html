@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <title>Il Calcio Spiegato</title>
+    <meta charset="utf-8">
+     <!--CSS-->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!--favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!--per sidebar e icone-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/ae4550f5d7.js" crossorigin="anonymous"></script>
+<!-- FONT -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+
+  <!--BOTTONE TOP-->
+<a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+<script type="text/javascript">
+const gotopbtn = document.querySelector(".gotopbtn");
+window.addEventListener("scroll",() =>{
+  if (window.pageYOffset > 100) {
+    gotopbtn.classList.add("active");
+  } else {
+    gotopbtn.classList.remove("active");
+  }
+})
+</script>
+
+  <header>
+      <h1>Oltre il gioco</h1>
+<!-- logo -->
+  <div>
+    <a href="index.html">
+      <img src="img/logo.png" width="230" height="135,30" alt="il calcio spiegato" id="logo">
+    </a>
+      <p id="descrizione"> Tutto quello che c'è da sapere sullo sport più amato dagli italiani</p>
+  </div>
+  </header>
+
+<!--briciole di pane-->
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Oltre il gioco</li>
+  </ol>
+</nav>
+
+<!--sidebar-->
+<input type="checkbox" id="check">
+<label for="check">
+<i class="fas fa-bars" id="btn"></i>
+<i class="fas fa-times" id="cancel"></i>
+</label>
+<nav class="sidebar">
+  <h2>Menu <i class="fab fa-elementor"></i></h2>
+  <a id="menu" href="index.html"><i class="fas fa-th-large"></i><span>Home</span></a>
+  <a id="menu" href="basi.html"><i class="far fa-futbol"></i><span>Basi</span></a>
+  <a id="menu" href="competizioni.html"><i class="fas fa-trophy"></i><span>Competizioni</span></a>
+  <a id="menu" href="tattica.html"><i class="far fa-clipboard"></i><span>Tattica</span></a>
+  <a id="menu" class="menu active" href="oltre.html"><i class="fas fa-smile-wink"></i><span id="voce4">Oltre il gioco</span></a>
+</nav>
+
+<!--intro-->
+<section id="interne">
+  <p id="grande">Clicca direttamente sulla sezione che ti interessa o scorri per non perderti nulla</p>
+</section>
+<div class="container">
+  <div class="row" id="areabottoni">
+  <div class="col">
+    <form action="#calciomercato">
+      <button type="submit" class="btn btn-primary contenuti" data-bs-toggle="button" autocomplete="off">Calciomercato</button>
+    </form>
+    </div>
+  <div class="col">
+    <form action="#calciotv">
+      <button type="submit" class="btn btn-primary contenuti" data-bs-toggle="button" autocomplete="off">Calcio in tv</button>
+    </form>
+    </div>
+  <div class="col">
+    <form action="#tifo">
+      <button type="submit" class="btn btn-primary contenuti" data-bs-toggle="button" autocomplete="off">Tifare</button>
+    </form>
+    </div>
+  <div class="col">
+    <form action="#fantacalcio">
+      <button type="submit" class="btn btn-primary contenuti" data-bs-toggle="button" autocomplete="off">Fantacalcio</button>
+    </form>
+    </div>
+  </div>
+</div>
+
+<section>
+
+<a name="calciomercato"></a><h5 class="sticky-top">Calciomercato</h5>
+
+  <p class="contenuto">Durante le sessioni di calciomercato i giocatori possono traferirsi da una società ad un'altra. Quindi le società possono cedere dei giocatori ad altre squadre, possono acquisirli a titolo definitivo (il cartellino del giocatore diventa di proprietà della nuova società) oppure acquisirlo in "prestito", cioé a titolo temporaneo.</p>
+  <p class="contenuto">Il prestito ha una certa durata. Durante le trattative per arrivare al prestito, le due società concordano cosa accadrà al termine del periodo previsto (solitamente una stagione). Se la società alla fine del prestito compra definitivamente il cartellino del giocatore si dice che il giocatore è stato "riscattato". La cifra del riscatto è decisa già prima dell'inizio del prestito e può esserci la possibilità di scelta ("diritto di riscatto") se comprare il giocatore o farlo tornare nella società originaria oppure può esserci già da subito l' "obbligo di riscatto" per cui alla fine del prestito la società dovrà riscattare il giocatore.</p>
+
+  <p class="contenuto">Le sessioni di calciomercato sono, in una stagione, 2 : una estiva, tra una stagione e l'altra, e una invernale, chiamata anche "mercato di riparazione" perché è una sessione che avviene a gennaio, quindi circa a metà della stagione in corso.</p>
+
+  <p class="contenuto">Fuori dalle sessioni di calciomercato i calciatori sono vincolati al proprio contratto e le società non possono portare a termine trattative per vendere o comprare giocatori.</p>
+
+  <p class="contenuto">Nei periodi di calciomercato i media fanno a gara a chi capisce prima dove andrà un giocatore e quali sono le trattative in corso. I giornalisti cercano quotidianamente di dare le ultime notizie di mercato ma non sempre le società rendono così accessibili le informazioni sulle trattative che si stanno svolgendo, quindi spesso circolano rumors e notizie che poi non vengono confermate dai fatti.</p>
+
+  <p class="contenuto">A seguito della chiusura di una trattativa, ogni società rende noto l'acquisto del giocatore in questione attraverso i propri canali ufficiali (solitamente il sito web e i canali social del club) e solo allora si ha veramente la conferma che il calciatore giocherà per quella squadra.
+</p>  
+
+</section>
+
+<section>
+
+<a name="calciotv"></a><h5 class="sticky-top">Calcio in tv</h5>
+
+<div class="indice">
+  <P>In questa sezione:</P>
+  <ul class="listaprincipale">
+    <li class="elementoprincipale"><a href="#telecronaca">La telecronaca</a></li>
+    <li class="elementoprincipale"><a href="#gergo">Il gergo calcistico</a></li>
+      <ul>
+        <li><a href="#partita">- Riguardo la partita</a></li>
+        <li><a href="#gesto">- Riguardo un gesto tecnico</a></li>
+        <li><a href="#durante">- Durante la partita</a></li>
+      </ul>
+  </ul>
+</div>
+
+<p class="contenuto" style="margin-top: 3rem;">Ormai il calcio in tv è la normalità, soprattutto se gli stadi sono chiusi a causa di una pandemia. Diventa quindi fondamentale possedere i vari abbonamenti per seguire la propria squadra e non solo. Ogni tre anni si assegnano i diritti tv e le aziende che riescono ad accaparrarseli sanno che si tratta di un business che fa girare moltissimi soldi. Non solo le aziende che riescono ad avere i diritti sulle partite parlano di calcio in tv, dalle tv nazionali a quelle locali quasi tutti hanno uno spazio dedicato al calcio.</p>
+  <p class="contenuto">Questo perché in Italia il calcio fa parte della vita quotidiana e così come se ne parla tra amici al bar, se ne parla in tv. Dopotutto la tv è un po’ lo specchio della società. Si possono fare trasmissioni di ore e ore senza ripetersi mai perché il calcio va oltre alle singole gare, si tratta di società, giocatori, uomini, passione, emozione, sport, economia e anche cultura. Quante volte hai sentito dire la frase "il calcio non è solo uno sport" oppure "il calcio non è solo un gioco"? Queste frasi racchiudono il motivo per cui ci sono così tanti tifosi di calcio in Italia e nel mondo...non è solo un gioco, è molto di più.</p>
+
+  <p class="contenuto">Perciò non c’è network che non abbia, piccola o grande, una rubrica o trasmissione dedicata al calcio. Si inizia con i programmi di notizie, poi i programmi pre-partita, la partita con telecronaca annessa, i post-partita, le interviste e le conferenze stampa dei protagonisti, i programmi di approfondimento, i programmi di commento alle partite e i programmi sul <a href="#calciomercato" class="linkparole" title="clicca per scoprire di più">calciomercato</a>.</p>
+
+  <p class="contenuto">Sicuramente se si parla di calcio in tv oggi non si può fare a meno di parlare di SKY e DAZN, le aziende che, insieme al servizio pubblico RAI (che trasmette sempre le partite di <a href="competizioni.html#coppaitalia" class="linkparole" target="_blank" title="clicca per scoprire di più sulla Coppa Italia">Coppa Italia</a>, <a href="competizioni.html#supercoppai" class="linkparole" target="_blank" title="clicca per scoprire di più sulla Supercoppa italiana">Supercoppa Italiana</a> e della <a href="competizioni.html#clubitalia" class="linkparole" target="_blank" title="clicca per scoprire di più sulla Nazionale">Nazionale italiana</a>, proprio perché considerati eventi di interesse nazionale che devono poter vedere tutti gli italiani in possesso di una tv), offrono al pubblico le partite e gli approfondimenti dei campionati nazionali, esteri e internazionali.</p>
+
+  <p class="contenuto">I giornalisti si alternano nel dare le notizie e aprire discussioni sui temi del momento legati al calcio, tutti i giorni dell’anno, perché in ogni periodo ci sono cose di cui parlare, che sia il calciomercato o la stagione in corso.</p>
+
+<a name="telecronaca"></a><h6>LA TELECRONACA</h6>
+
+  <p class="contenuto">Nonostante il "contorno" realizzato da tutti network locali e nazionali, l'evento principale rimane la partita e la cosa che più contraddistingue la partita in tv dall'esperienza dello stadio è la telecronaca. A differenza della radiocronaca dove il giornalista deve essere bravo a descrivere bene ciò che accade in campo cercando di far immaginare all’ascoltatore ciò che lui sta vedendo allo stadio, il telecronista sa che lo spettatore ha a disposizione le immagini che anche lui vede, perciò il lavoro del telecronista è più diverso di quanto si possa intuire.</p>
+  <p class="contenuto">Il telecronista descrive sì le azioni e ciò che accade in campo, ma commenta anche i replay, interagisce con il suo collega che fa coppia con lui in veste di "commento tecnico" (solitamente si tratta di ex calciatori che commentano la partita dando il loro punto di vista su ciò che accade in campo e sul comportamento di arbitri, allenatori e giocatori, a partire dalla sua esperienza). Infatti, il telecronista si muove quasi sempre "in coppia" (specialmente se si tratta delle partite più importanti e seguite). Si trova quindi insieme ad un'altra persona che gli permette anche di staccarsi dalla telecronaca "pura" e offrire un commento che possa anche intrattenere lo spettatore, che già vede ciò che sta accadendo grazie alle immagini. Alcune "coppie" sono più famose di altre, per citarne alcune: Fabio Caressa e Beppe Bergomi di Sky (coppia celebre soprattutto per le cronache delle partite dell’Italia ai mondiali nel 2006), Riccardo Trevisani e Lele Adani (sempre di Sky), Alberto Rimedio e Antonio Di Gennaro (alla Rai).</p>
+
+  <p class="contenuto">Altri telecronisti molto famosi di questi anni sono sicuramente Sandro Piccinini (che con i suoi neologismi cercava di spiegare le traiettorie del pallone in maniera molto originale) e Pierluigi Pardo (oggi a DAZN).</p>
+
+  <p class="contenuto">Per quanto riguarda i volti alla conduzione delle trasmissioni pre e post-partita, sono spesso le donne a farla da padrone. Tra le più conosciute: Ilaria D’amico (volto di Sky per lungo tempo), Paola Ferrari (Rai), Diletta Leotta (oggi a DAZN), Anna Billò (Sky).</p>
+
+  <p class="contenuto">Durante la telecronaca ci sono anche gli interventi dei "bordocampisti" (gli "inviati a bordo campo") che partecipano interagendo con i due commentatori per dare le proprie impressioni dal campo, a pochi passi dalle panchine e dagli allenatori. Sono loro che, essendo lì allo stadio, fanno le interviste ai giocatori e agli allenatori. Spesso si tratta degli stessi giornalisti che durante la settimana (e spesso durante tutto l’anno) seguono le notizie e le vicissitudini proprio di una delle due squadre in campo (quasi sempre quella di casa) essendo stabilmente inviati nei luoghi dove la squadra si allena e dove la società ha la sua sede.
+</p>
+
+<a name="gergo"></a><h6>IL GERGO CALCISTICO</h6>
+
+  <p class="contenuto">Si può dire che il calcio abbia una specie di vocabolario tutto suo con termini che derivano dal gioco vero e proprio e termini che si sono utilizzati per descrivere certe dinamiche del calcio e che sono i media (soprattutto la televisione) ad aver "inventato".</p>
+
+  <p class="contenuto">Molto spesso sono i telecronisti a far diventare di moda delle parole che diventano di uso comune e un segno di riconoscimento. Ogni telecronista ha il suo "stile" ma alcuni spiccano più di altri. Per fare un esempio Fabio Caressa ha soprannominato la tipica  <a href="basi.html#punizioni" class="linkparole" target="_blank" title="clicca per scoprire di più sulle punizioni">punizione</a> di Andrea Pirlo "la maledetta" (per la sua traiettoria imprendibile per il portiere) e questo termine è diventato di uso comune.</p>
+
+  <p class="contenuto"><i class="fas fa-hand-point-right"></i><a class="didascalia" href="https://sport.sky.it/calcio/approfondimenti/la-maledetta-di-pirlo-raccontata-da-fabio-caressa" target="_blank" title="la maledetta di Pirlo">Sul sito di Sky sport un interessante articolo a riguardo</a></p> 
+
+  <p class="contenuto">Lo stile di Sando Piccinini è sicuramente unico e ci sono dei termini che usava spesso (attualmente ha preso una pausa dalle telecronache) e che lo contraddistinguono, alcune di queste sono: "Sciabolata tesa", "Sciabolata morbida", "Brivido!", "Proprio lui", "'ccezionale".
+  
+  <p class="contenuto"><i class="fas fa-hand-point-right"></i><a class="didascalia" href="https://www.treccani.it/magazine/lingua_italiana/articoli/scritto_e_parlato/Europei3.html" target="_blank" title="treccani">Sul sito della Treccani un interessante articolo sui telecronisti di ieri e di oggi</a></p>
+
+  <p class="contenuto">Di seguito una serie di termini (non vuole essere una lista completa ma un'"assaggio" delle parole che si sentono dire se si ascolta un programma tv sul calcio) che sono spesso utilizzati quando si parla di calcio, anche in telecronaca o in sede di commento:</p>
+
+<a name="partita"></a><h6 class="sezione">Riguardo una partita</h6>
+
+<p class="titolo">Biscotto</p>
+  <p class="contenuto">Il biscotto è un "accordo" tra due squadre che si devono affrontare che decidono di non giocare per vincere ma giocare per avere un risultato che vada bene ad entrambe, spesso a discapito di una terza squadra rivale.</p>
+
+<a name="derby"></a><p class="titolo">Derby</p>
+  <p class="contenuto">Il derby è una partita dove si sfidano due squadre della stessa città oppure molto vicine geograficamente o in cui c'è una storica rivalità tra le tifoserie molto accesa. Derby particolari sono l'incontro tra Inter e Juventus, soprannominato "derby d’Italia" e il "derby del sole", tra Roma e Napoli. Alcuni derby delle squadre della stessa città sono ad esempio Roma-Lazio, Torino-Juventus, Inter-Milan, Genoa-Sampdoria.</p>
+
+<p class="titolo">Goleada</p>
+  <p class="contenuto">Una squadra fa una "goleada" quando fa molti gol (in genere 4 o più).</p>
+
+<p class="titolo">Il gol della bandiera</p>
+  <p class="contenuto">Il gol della bandiera è quello segnato verso la fine della partita, dalla squadra che ormai risulta sconfitta, essendo nel punteggio sotto di diversi gol. La sua origine viene dal fatto che in passato si usava segnare il punteggio posizionando una bandiera con i colori della squadra a ogni gol e posizionarne almeno una riduceva l’umiliazione subita.</p>
+
+<p class="titolo">Partita a reti bianche</p>
+  <p class="contenuto">La partita finisce a reti bianche se finisce senza gol, 0 a 0.</p>
+
+<p class="titolo">Poker</p>
+  <p class="contenuto">Una squadra ha "calato il poker" quando vince facendo quattro gol (specialmente se il risultato finale è di 4 a 0).</p>
+
+<p class="titolo">Porta inviolata</p>
+  <p class="contenuto">Mantenere la porta inviolata, da parte del <a href="tattica.html#portiere" class="linkparole" target="_blank" title="clicca per scoprire di più sul portiere">portiere</a> o dell'intera squadra, significa non subire nemmeno un gol durante una partita. Oggi si usa anche il termine inglese "clean-sheet" come sinonimo.</p>
+
+<p class="titolo">Rimonta</p>
+  <p class="contenuto">Fare una "rimonta" significa passare da una situazione di svantaggio a livello di punteggio a una di vantaggio (ad esempio se durante una partita il risultato è 2 a 0 ma alla fine finisce 2 a 3).</p>
+
+<p class="titolo">Zona Cesarini</p>
+  <p class="contenuto">L'espressione zona Cesarini ormai non è più molto utilizzata ma è comunque di uso comune anche al di fuori del calcio. Si usa per indicare i minuti conclusivi e di recupero della partita poiché prende il nome da Renato Cesarini, un calciatore oriundo argentino che giocò dal 1929 al 1935 con la Juventus, con cui segnò diversi gol nel finale di partita.</p>
+
+
+<a name="gesto"></a><h6 class="sezione">Riguardo un gesto tecnico</h6>
+
+
+<p class="titolo">Aggiustare la palla</p>
+  <p class="contenuto">Aggiustare la palla significa <a href="tattica.html#stop" class="linkparole" target="_blank" title="clicca per scoprire di più sul portiere">stopparla</a> e controllarla per poi servire un compagno o tirare (il tiro non è di "prima intenzione").</p>
+
+<p class="titolo">All’incrocio dei pali</p>
+  <p class="contenuto">Un gol all'incrocio dei pali è un gol in cui la palla finisce in rete passando sotto al punto in cui traversa e palo si incontrano.</p>
+
+<p class="titolo">Bagaglio tecnico</p>
+  <p class="contenuto">Per bagaglio tecnico si intendono le caratteristiche tecniche del giocatore.</p>
+
+<p class="titolo">Campanile</p>
+  <p class="contenuto">Il campanile è un tiro con la palla che finisce molto in alto per poi riscendere quasi perpendicolarmente.</p>
+
+<p class="titolo">Colpire un legno</p>
+  <p class="contenuto">Colpire un legno significa colpire con la palla un palo o la traversa della porta.</p>
+
+<p class="titolo">Dai e Vai</p>
+  <p class="contenuto">"Dai e vai" oppure "Uno-due" sono espressioni utilizzate per descrivere l’azione di un giocatore che passa il pallone al compagno (il giocatore "dà" il pallone) e subito si mette in movimento per farselo ridare ("va" in avanti per essere di nuovo disponibile al passaggio) dal compagno che fa lo stesso. Viene fatto per evitare gli avversari in modo veloce.</p>
+
+<p class="titolo">Dettare il passaggio</p>
+  <p class="contenuto">Il giocatore "detta il passaggio" quando fa un movimento o un gesto per indicare al compagno dove farsi passare la palla.</p>
+
+<p class="titolo">Eurogol</p>
+  <p class="contenuto">Un "eurogol" è un gol molto spettacolare, spesso effettuato con un tiro da lontano rispetto alla porta. Il nome è ripreso da una trasmissione televisiva che in passato trasmetteva i gol più belli d’Europa.</p>
+
+<p class="titolo">In due tempi</p>
+  <p class="contenuto">L'espressione "in due tempi" spesso si riferisce alla presa del portiere, quando non avviene con un'unica presa (in un tempo) ma toccandola per due volte consecutivamente prima di trattenerla definitivamente tra le mani.</p>
+
+<p class="titolo">Lo manda al bar</p>
+  <p class="contenuto">"Mandare al bar" un avversario significa (solitamente con una finta o un altro tipo di <a href="tattica.html#dribbling" class="linkparole" target="_blank" title="clicca per scoprire di più sul dribbling">dribbling</a>) saltarlo facendolo andare dalla parte opposta alla palla.</p>
+
+<p class="titolo">No look</p>
+  <p class="contenuto">Il "no look" è un passaggio o un tiro effettuato senza guardare la palla (guardando altrove).</p>
+
+<p class="titolo">Papera</p>
+  <p class="contenuto">La "papera" è un errore, solitamente del <a href="tattica.html#portiere" class="linkparole" target="_blank" title="clicca per scoprire di più sul portiere">portiere</a>, in situazioni in cui solitamente non si sbaglia perché molto semplici.</p>
+
+<p class="titolo">Piedi educati</p>
+  <p class="contenuto">Un giocatore ha i "piedi educati" quando ha grande tecnica, riesce a fare passaggi e tiri molto precisi.</p>
+
+<p class="titolo">Prendere in controtempo</p>
+  <p class="contenuto">Per prendere in controtempo l'avversario si fa passare il pallone dalla parte opposta al movimento del calciatore avversario in questo modo il giocatore non può intercettare il pallone perché l'inerzia lo porta dall'altra parte.</p>
+
+<p class="titolo">Puntare la difesa</p>
+  <p class="contenuto">Un giocatore "punta la difesa" quando ha il pallone e i difensori avversari davanti a sé e prova a superarli senza passare il pallone ai compagni.</p>
+
+<p class="titolo">Scaricare il pallone</p>
+  <p class="contenuto">Scaricare il pallone significa passarlo a un compagno che si trova in posizione più arretrata.</p>
+
+<p class="titolo">Scartare</p>
+  <p class="contenuto">Scartare un avversario significa <a href="tattica.html#dribbling" class="linkparole" target="_blank" title="clicca per scoprire di più sul dribbling">dribblarlo</a>, saltarlo mantenendo il possesso del pallone.</p>
+
+<p class="titolo">Svirgolare il pallone</p>
+  <p class="contenuto">"Svirgolare" indica colpire il pallone senza impattarlo bene col piede ma prendendolo solo con una sua parte in modo maldestro.</p>
+
+<p class="titolo">Tiro telefonato</p>
+  <p class="contenuto">Un "tiro telefonato" è un tiro in porta non pericoloso perché prevedibile e facilmente parabile dal portiere.</p>
+
+<p class="titolo">Velo</p>
+  <p class="contenuto">Fare il velo significa lasciar sfilare il pallone al posto di impattarlo per favorire un compagno e sorprendere l'avversario.</p>
+
+
+<a name="durante"></a><h6 class="sezione">Durante una partita</h6>
+
+
+<p class="titolo">A piedi invertiti</p>
+  <p class="contenuto">Un giocatore gioca a piedi invertiti se si posiziona, su indicazione dell'<a href="basi.html#allenatore" target="_blank" class="linkparole" title="Scopri di più sull'allenatore">allenatore</a>, nel lato del campo opposto a quello del suo piede più forte (ad esempio un destro che gioca a sinistra).</p>
+
+<p class="titolo">Addormentare la partita</p>
+  <p class="contenuto">Con "addormentare la partita" si intende l'atteggiamento di una squadra di rallentare i ritmi di gioco, facendo passaggi e movimenti in modo lento, senza sfruttare la velocità e la corsa dei giocatori (spesso allo scopo di interrompere l'inerzia di ripetute azioni d'attacco degli avversari).</p>
+
+<p class="titolo">Calcio piazzato</p>
+  <p class="contenuto">L'espressione "calcio piazzato" è usata come sinonimo di calcio da fermo, per lo più <a href="basi.html#punizioni" class="linkparole" target="_blank" title="clicca per scoprire di più sulle punizioni">punizioni</a> e <a href="basi.html#angolo" class="linkparole" target="_blank" title="clicca per scoprire di più sui calci d'angolo">angoli</a>.</p>
+
+<p class="titolo">Fraseggio</p>
+  <p class="contenuto">Il fraseggio è una serie di passaggi tra i giocatori della stessa squadra.</p>
+
+<p class="titolo">Giocare col cronometro</p>
+  <p class="contenuto">La squadra "gioca col cronometro" quando cerca di far trascorrere gli ultimi secondi prima del termine della partita mantenendo il possesso palla (per mantenere il risultato fin lì ottenuto).</p>
+
+<p class="titolo">Palla gol</p>
+  <p class="contenuto">Avere una palla gol è trovarsi in una situazione in cui c’è un’ottima occasione di fare un gol.</p>
+
+<p class="titolo">Palla coperta</p>
+  <p class="contenuto">C'è una situazione di palla coperta quando chi attacca dà le spalle alla porta avversaria.</p>
+
+<p class="titolo">Palla scoperta</p>
+  <p class="contenuto">C'è una situazione di palla scoperta quando chi attacca ha la porta avversaria davanti a sé, la guarda frontalmente.</p>
+
+<p class="titolo">Primo palo</p>
+  <p class="contenuto">Il "primo palo" è il palo più vicino rispetto a dove il giocatore che sta eseguendo un tiro si trova (di conseguenza il "secondo palo" è quello più lontano).</p>
+
+<p class="titolo">Ribaltamento di fronte</p>
+  <p class="contenuto">Si ha un ribaltamennto di fronte quando in una partita si passa velocemente da un’azione pericolosa di una squadra ad un’azione pericolosa dell’altra squadra.</p>
+
+<p class="titolo">Rimpallo</p>
+  <p class="contenuto">Il rimpallo si ha quando il pallone ritorna tra i piedi del giocatore o di un compagno di squadra nonostante il rimbalzo del pallone sul corpo di un avversario.</p>
+
+<p class="titolo">Seconde palle</p>
+  <p class="contenuto">Una "seconda palla" si ha in quei momenti in cui la palla non è in controllo di nessuna delle due squadre. Si dice "sfruttare le seconde palle" per indicare le situazioni, di solito derivanti da calci da fermo, in cui i giocatori si posizionano in modo da poter recuperare delle eventuali "seconde palle" e provare a segnare o comunque a non far ripartire l’avversario.</p>
+
+<p class="titolo">Squadra materasso</p>
+  <p class="contenuto">Una squadra materasso è una squadra che si pensa che sia facile da battere e che si trova quasi sempre nell’ultima posizione della classifica.</p>
+
+<p class="titolo">Tiro murato</p>
+  <p class="contenuto">Un tiro "murato" è un tiro che sbatte addosso al corpo di un avversario.</p>
+
+<p class="titolo">Turnover</p>
+  <p class="contenuto">Fare turnover significa avere nella formazione titolare molti giocatori diversi rispetto alla formazione della partita precedente.</p>
+
+<p class="titolo">Viaggio alla bandierina</p>
+  <p class="contenuto">Fare un viaggio alla bandierina significa andare a tirare un <a href="basi.html#angolo" class="linkparole" target="_blank" title="clicca per scoprire di più sui calci d'angolo">calcio d’angolo</a>.</p>
+
+</section>
+
+<section>
+
+<a name="tifo"></a><h5 class="sticky-top">Tifare</h5>
+
+  <p class="contenuto">Ci sono vari tipi di tifosi: chi si sente più legato sentimentalmente alla squadra del cuore, chi segue solo qualche partita, chi segue solo le partite della "sua" squadra, chi guarda anche le altre partite del campionato, chi guarda tutte le competizioni, chi guarda solo la <a href="competizioni.html#nazionale" class="linkparole" target="_blank" title="clicca per scoprire di più sulla nazionale">nazionale</a>, chi va sempre allo stadio per le partite in casa (prima della pandemia), chi va anche a tutte le trasferte, chi solo qualche volta, chi sa tutti i cori della "curva" (il settore dello stadio con i tifosi più appassionati) a memoria, chi batte le mani per tutti i 90 minuti, chi va a vedere anche gli allenamenti per seguire e incitare la squadra...</p>
+
+  <p class="contenuto">Comunque ogni tifoso che segue la sua squadra del cuore, soffre per le sconfitte e gioisce per i successi della sua squadra (e spesso esulta per le sconfitte delle rivali), va allo stadio quando può e canta i cori per sostenere i suoi calciatori. Sì, perché i calciatori sono anche "suoi" perché appartengono alla "sua" squadra, il tifoso si sente parte della squadra, è coinvolto appieno nel progetto e se alla fine della partita chiederai il risultato, non risponderà "la squadra ha vinto/perso/pareggiato" ma "abbiamo vinto/perso/pareggiato".</p>
+
+  <p class="contenuto">Al di là della partita però il tifoso vero passa molto tempo con la testa alla squadra: si dispera se i risultati non sono buoni, fa i calcoli sui punti e i gol che servono per raggiungere l’obiettivo stagionale, si carica oppure è in ansia prima di una partita decisiva o di un <a href="#derby" class="linkparole" title="cos'è un derby">derby</a>, si tiene aggiornato su infortuni e problemi della squadra e dell’avversario di turno.</p>
+
+  <p class="contenuto">Nelle ore successive alla partita, l’umore del tifoso è sicuramente condizionato dall’andamento della partita e soprattutto dal risultato. Il tifoso è anche quello che prima di prendere qualsiasi impegno guarda il calendario delle partite della sua squadra, perché se c’è la partita difficilmente si farà trovare disponibile. Il giorno della partita si alza e sa che quel giorno è diverso dagli altri della settimana, sa che tutte le partite possono essere decisive e che perdere, anche se meritatamente, non fa piacere a nessuno.
+</p>
+
+<h6>LO STADIO</h6>
+
+  <p class="contenuto">L'habitat naturale del tifoso è lo stadio (chiuso ormai da troppo tempo a causa della pandemia). Trovarsi in mezzo a centinaia, migliaia di persone che hanno la sua stessa passione. Si crea un clima quasi di fratellanza e tutti gli altri problemi scompaiono per quel paio d’ore: non c’è il lavoro, non c’è la scuola, non ci sono impegni, quel tempo è esclusivamente dedicato al calcio, sia che ci sia una gioia sia che ci sia un risultato negativo. E tutti sono lì per una cosa sola: cantare, battere le mani, gridare, esultare e anche rimanere in silenzio, delusi dall’ennesimo gol preso. Il tifoso sa che la sua passione è grande ma sa anche che solo insieme agli altri il suo grido di amore per la squadra potrà essere ascoltato.</p>
+
+  <p class="contenuto">Lo stadio è quindi un posto magico, proprio per l’atmosfera che si crea e non è così facile spiegare le sensazioni che stare in mezzo a tutta quella gente può dare...forse l'esperienza più simile è andare al concerto del tuo cantante preferito (che spesso, neanche a farlo a posta, è proprio in uno stadio) anche se lì manca la tensione del risultato, della gara, della voglia di vincere.</p>
+
+  <p class="contenuto">I cori da stadio possono essere dichiarazioni d’amore per la propria squadra, ma anche prese in giro per gli avversari, e non si può negare che ci siano alcuni cori un po’ più offensivi di altri che però non creano troppo disagio perché si sa che l’avversario fa lo stesso e quindi l’insulto diventa alla fine quasi un "gioco", permesso da quel particolare contesto in cui non si insulta la persona singola ma per il "ruolo" di tifoso che in quel momento ricopre all’interno dello stadio. Così come anche gli insulti a giocatori o arbitri, che purtroppo capitano all’interno di uno stadio, non sono rivolti all’essere umano, ma al ruolo che viene ricoperto in quei 90 minuti.
+</p>
+
+<h6>LA FEDE</h6>
+
+  <p class="contenuto">Il tifoso decide la sua squadra del cuore e da quel momento (solitamente da bambino) non la abbandonerà mai, perché non esiste la possibilità di un tradimento. Alla domanda "per chi tifi?" il tifoso risponde sempre allo stesso modo, non c’è dubbio, basta che tu glielo chieda una volta perché anche se lo chiedessi 100 volte, la risposta non cambierebbe.</p>
+  <p class="contenuto">Il tifoso vive di emozioni. E quando si raggiungono i risultati sperati, dopo mesi e mesi di partite, cori, applausi e piccole delusioni, non si può fare a meno di esultare: con un grido, con un applauso, con abbracci ai "vicini di stadio" (quelli che hanno l'abbonamento nel posto vicino al tuo), con l’adrenalina che non ti fa rimanere fermo, e persino con una lacrima di gioia, se quel risultato lo attendevi da una vita intera.</p>
+
+  <p class="contenuto">Il calcio a volte fa dannare, fa arrabbiare i tifosi, gli fa venir voglia di dare i pugni contro il muro ma le emozioni positive che ti dà la vittoria della tua squadra, l’obiettivo raggiunto a fine stagione, quelle emozioni che durano anche per settimane e che ti fanno piangere di gioia, sono troppo belle e tutto il resto in confronto è sopportabile.</p>
+
+  <p class="contenuto">Sono emozioni che possono sembrare difficili da capire da chi non tifa nessuna squadra o non si interessa di calcio...può venir da pensare: "sono altre le gioie e le cose importanti della vita" (e questo può essere in parte vero) oppure "sono solo dei pazzi che credono che la vita sia fatta di 22 persone che corrono dietro a un pallone" (e questo non è vero perché è ovvio che la vita sia fatta anche di altro, ma le passioni fanno parte della vita, no?). In realtà è soltanto uno sfogo, una passione che può farci sentire parte di un gruppo, un amore incondizionato che non potrà mai deluderti abbastanza da farti dire "è finita".</p>
+
+  <p class="contenuto">Molto spesso i calciatori, che sono dei professionisti, fanno scelte su dove andare a "lavorare" che i tifosi non comprendono... il giocatore ideale per il tifoso non è quello più forte atleticamente o quello che segna più gol, è quello che suda la maglia dei colori che tanto ama come se non ci fosse niente di più importante al mondo che vincere quella partita e che dimostra di aver, almeno in parte, capito quanto quella maglia che porta sia importante per lui che lo continua a guardare e a incitare dagli spalti o da casa davanti a una tv.
+</p>
+
+</section>
+
+<section>
+
+<a name="fantacalcio"></a><h5 class="sticky-top">Fantacalcio</h5>
+
+  <p class="contenuto">L’Italia è un Paese talmente "malato" di calcio, che cerca in tutti i modi di farlo rientrare nella sua vita quotidiana. Molti italiani sono molto legati a un gioco in paritcolare, il "fantacalcio", che simula delle partite sulla base della prestazione dei giocatori sul campo.</p>
+
+  <p class="contenuto">In pratica, un gruppo di amici che decide di fare il fantacalcio crea una propria "lega" che sarà formata dalle squadre appartenenti a ognuno dei partecipanti. I nomi alle squadre sono spesso giochi di parole e molto fantasiosi. Ogni "fantallenatore" deve decidere prima di ogni turno di campionato quale formazione schierare per battere il proprio avversario, che farà lo stesso. La squadra di ogni fantallenatore è formata dai nomi dei giocatori che realmente giocano il campionato di <a href="competizioni.html#seriea" class="linkparole" target="_blank" title="clicca per scoprire di più sulla Serie A">Serie A</a>.</p>
+  <p class="contenuto">Per formare la propria rosa, all’inizio della stagione si fa "l’asta del fantacalcio", un rituale dove tutti i partecipanti partono da un budget di "fantamilioni" virtuali che deve utilizzare per aggiudicarsi i giocatori che secondo lui faranno meglio sul campo. La vittoria o la sconfitta al fantacalcio è determinata dalla somma dei voti in pagella che i giocatori prendono in base alle prestazioni reali degli stessi ai quali si sommano gol, assist e rigori parati che valgono dei punti bonus che fanno salire il punteggio mentre per gol presi (dal proprio portiere), cartellini gialli o rossi, rigori sbagliati e autogol ci sono dei malus che fanno scendere il punteggio totale. Ogni lega può avere le proprie varianti di regolamento e stabilire in modi diversi i punteggi per avere la vittoria. Alla fine del campionato ci sarà una classifica e il vincitore avrà la gloria e l’onore e molto spesso la vittoria dei soldi raccolti all’inizio dell'anno come premio.</p>
+
+  <p class="contenuto">È un gioco che per lo più è una fonte di prese in giro tra amici e viene fatto per divertirsi e creare un po’ di competizione. Soprattutto i bonus e i malus determinano le più importanti arrabbiature ed esultanze. Quasi tutti gli appassionati di calcio fanno anche il fantacalcio e ormai per loro rappresenta quasi una tradizione, un appuntamento fisso.</p>
+  <p class="contenuto">Oltre all’app e al sito che detiene il marchio "Fantacalcio" ovvero <a href="https://www.fantacalcio.it/" class="linkparole" target="_blank">fantacalcio.it</a> che gestisce oltre che le notizie sul mondo del calcio anche un sistema per automatizzare i calcoli e tutto ciò che sta dietro al fantacalcio, ci sono moltissime altre app e siti di informazione che si occupano di "aiutare" i fantallenatori a decidere quali giocatori "mettere" (schierare nella formazione titolare) e quali no, aggiornando sempre minuto per minuto gli appassionati.</p>
+
+  <p class="contenuto">È un gioco talmente diffuso che da due anni ormai anche Skysport ha deciso di aprire un programma (della durata di mezz'ora) che va in onda su Skysport24 prima di ogni turno di campionato per parlare di fantacalcio e aiutare i fantallenatori nelle loro decisioni. Il programma in questione è "FantaShow" condotto da Mario Giunta. Un altro segnale di quanto il fantacalcio ormai popolare.
+</p>
+
+</section>
+
+<!--FOOTER-->
+<footer>
+  <div class="col">
+    <div class="row">
+  <form action="documentazione.html"><button type="submit" class="btn btn-primary footer" data-bs-toggle="button" autocomplete="off" id="doc">Il progetto - documentazione</button>
+  </form> 
+  <form action="presentazione.html"><button type="submit" class="btn btn-primary footer" data-bs-toggle="button" autocomplete="off">Chi sono</button>
+</form>
+<a href=""><i class="fab fa-instagram"></i></a>
+</div>
+<div class="row">
+<P class="footer">Tutti i diritti riservati. Tutti i marchi e i nomi menzionati appartengono ai rispettivi proprietari.</P>
+</div>
+</div>
+</footer>
+</body>
+</html>

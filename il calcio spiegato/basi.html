@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <title>Il Calcio Spiegato</title>
+    <meta charset="utf-8">
+  <!--CSS-->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+  <!--favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!--per sidebar e icone-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/ae4550f5d7.js" crossorigin="anonymous"></script>
+<!-- FONT -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--BOTTONE TOP-->
+<a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+  <script type="text/javascript">
+    const gotopbtn = document.querySelector(".gotopbtn");
+    window.addEventListener("scroll",() =>{
+    if (window.pageYOffset > 100) {
+      gotopbtn.classList.add("active");
+    } else {
+      gotopbtn.classList.remove("active");
+    }
+    })
+  </script>
+
+<header>
+  <h1>Basi del calcio</h1>
+<!-- logo -->
+  <div>
+    <a href="index.html">
+      <img src="img/logo.png" width="230" height="135,30" alt="il calcio spiegato" id="logo">
+    </a>
+      <p id="descrizione"> Tutto quello che c'è da sapere sullo sport più amato dagli italiani</p>
+  </div>
+  </header>
+<!--briciole di pane-->
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Basi</li>
+  </ol>
+</nav>
+
+<!--sidebar-->
+<input type="checkbox" id="check">
+<label for="check">
+<i class="fas fa-bars" id="btn"></i>
+<i class="fas fa-times" id="cancel"></i>
+</label>
+<nav class="sidebar">
+  <h2>Menu <i class="fab fa-elementor"></i></h2>
+  <a id="menu" href="index.html"><i class="fas fa-th-large"></i><span>Home</span></a>
+  <a class="menu active" id="menu" href="#basi.html"><i class="far fa-futbol"></i><span>Basi</span></a>
+  <a id="menu" href="competizioni.html"><i class="fas fa-trophy"></i><span>Competizioni</span></a>
+  <a id="menu" href="tattica.html"><i class="far fa-clipboard"></i><span>Tattica</span></a>
+  <a id="menu" href="oltre.html"><i class="fas fa-smile-wink"></i><span id="voce4">Oltre il gioco</span></a>
+</nav>
+
+<!--intro-->
+
+<section id="interne">
+  <p id="grande">Clicca direttamente sulla sezione che ti interessa o scorri per non perderti nulla</p>
+</section>
+
+<div class="container">
+  <div class="row" id="areabottoni">
+    <div class="col">
+      <form action="#regolamento">
+        <button type="submit" class="btn btn-primary contenuti" data-bs-toggle="button" autocomplete="off">Regolamento</button>
+      </form>
+    </div>
+
+    <div class="col">
+      <form action="#tecnologie">
+        <button type="submit" class="btn btn-primary contenuti"  data-bs-toggle="button" autocomplete="off">Tecnologie</button>
+      </form>
+    </div>
+
+    <div class="col">
+      <form action="#protagonisti">
+        <button type="submit" class="btn btn-primary contenuti" data-bs-toggle="button" autocomplete="off">Protagonisti</button>
+      </form>
+    </div>
+
+    <div class="col">
+      <form action="#organismi">
+        <button type="submit" class="btn btn-primary contenuti" data-bs-toggle="button" autocomplete="off">Organi, Leghe e Federazioni</button>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<!--contenuti-->
+
+<section>
+  <a name="regolamento"><h5 class="sticky-top">Regolamento</h5></a>
+
+<div class="indice">
+  <P>In questa sezione:</P>
+  <ul class="listaprincipale">
+      <li class="elementoprincipale"><a href="#campodacalcio">Il campo</a></li>
+      <li class="elementoprincipale"><a href="#pallone">Il pallone</a></li>
+      <li class="elementoprincipale"><a href="#calciatori">I calciatori</a></li>
+      <li class="elementoprincipale"><a href="#equipaggiamento">Equipaggiamento</a></li>
+      <li class="elementoprincipale"><a href="#ufficiali">Gli ufficiali di gara</a></li>
+      <li class="elementoprincipale"><a href="#durata">Durata della gara</a></li>
+      <li class="elementoprincipale"><a href="#inizio">L'inizio e la ripresa del gioco</a></li>
+      <li class="elementoprincipale"><a href="#gioco">In gioco o non in gioco</a></li>
+      <li class="elementoprincipale"><a href="#risultato">Il risultato della gara</a></li>
+      <li class="elementoprincipale"><a href="#fuorigioco">Il fuorigioco</a></li>
+      <li class="elementoprincipale"><a href="#falli">Falli e scorrettezze</a></li>
+      <li class="elementoprincipale"><a href="#punizioni">I calci di punizione</a></li>
+      <li class="elementoprincipale"><a href="#rigori">Il rigore</a></li>
+      <li class="elementoprincipale"><a href="#rimessa">La rimessa laterale</a></li>
+      <li class="elementoprincipale"><a href="#rinvio">Il rinvio</a></li>
+      <li class="elementoprincipale"><a href="#angolo">Il calcio d'angolo</a></li>
+      <li class="elementoprincipale"><a href="#sostituzioni">Sostituzioni</a></li>
+  </ul>
+</div>
+
+  <p class="contenuto" style="margin-top: 3rem;">Le regole del calcio sono scritte in un regolamento ufficiale e stabilite dall'<a href="#ifab" class="linkparole" title="Clicca per scoprire di più sull'IFAB">IFAB</a>, International Football Association Board, che ha anche il potere di modificarle.</P>
+
+  <P class="contenuto">Il regolamento viene revisionato periodicamente e solitamente le modifiche riguardano alcuni dettagli relativi ad aspetti secondari e non alle fondamenta del calcio. Le regole che vengono qui elencate sono quelle attualmente in vigore.   
+  </P>
+
+<a name="campodacalcio"></a><h6>IL CAMPO</h6>
+
+  <P class="contenuto">Il campo da gioco è rettangolare e le misure possono variare dai 90 ai 120 metri di lunghezza e dai 45 ai 90 metri di larghezza. In base alle competizioni sono richiesti requisiti minimi più specifici. Le varie zone del campo sono delimitate da linee bianche che devono essere spesse almeno 10 cm e non più di 12 cm.
+</P>
+
+<p class="contenuto" id="camposostituto"><a class="didascalia" href="campo.html" target="_blank" title="Scopri le zone del campo e le loro funzioni"><b>Clicca qui per vedere le zone del campo e le loro funzioni</b></a></p>
+
+<!-- CAMPO MAPPA -->
+
+<div class="container" id="mappa">
+  <P class="actionmappa">Clicca sulle zone del campo indicate dalle frecce per scoprirne le funzioni</P>
+  <img src="img/campomappa.png" usemap="#image-map" id="campo" alt="Campo da calcio">
+  <map name="image-map">
+    <area target="" alt="area di porta" title="area di porta" href="campo.html#aporta" coords="23,183,56,305" shape="rect">
+    <area target="" alt="dischetto del rigore" title="dischetto del rigore" href="campo.html#discrigore" coords="95,244,6" shape="circle">
+    <area target="" alt="area d'angolo" title="area d'angolo" href="campo.html#aangolo" coords="18,474,27,474,27,468,24,464,19,464" shape="poly">
+    <area target="" alt="linea laterale" title="linea laterale" href="campo.html#laterale" coords="28,13,722,17" shape="rect">
+    <area target="" alt="dischetto di centrocampo" title="dischetto di centrocampo" href="campo.html#disccentro" coords="374,243,6" shape="circle">
+    <area target="" alt="cerchio di centrocampo" title="cerchio di centrocampo" href="campo.html#cerchio" coords="375,243,65" shape="circle">
+    <area target="" alt="linea di centrocampo" title="linea di centrocampo" href="campo.html#lcentro" coords="378,472,371,19" shape="rect">
+    <area target="" alt="porta" title="porta" href="campo.html#porta" coords="730,217,737,270" shape="rect">
+    <area target="" alt="area di rigore" title="area di rigore" href="campo.html#arigore" coords="726,380,617,380,616,292,603,277,593,258,593,237,598,217,606,205,617,194,616,108,725,108" shape="poly">
+    <area target="" alt="linea di porta" title="linea di porta" href="campo.html#lporta" coords="726,21,730,465" shape="rect">
+  </map>
+</div>
+
+<a name="pallone"></a><h6>IL PALLONE</h6>
+  <P class="contenuto">Il regolamento prevede anche per il pallone dei requisiti minimi: forma sferica, circonferenza dai 68 cm ai 70 cm, peso dai 410 g ai 450 g, pressione tra 0,6 atm e 1,1 atm.</P>
+  <P class="contenuto">Ogni competizione professionistica ha il suo pallone ufficiale che ogni anno viene prodotto da aziende specializzate che cercano di produrre palloni all'avanguardia con il massimo dell'aerodinamicità. Le aziende che producono palloni adottati nelle competizioni ufficiali sono ad esempio Nike (in <a href="competizioni.html#seriea" target="_blank" class="linkparole" title="Clicca per scoprire di più sulla serie A">Serie A</a>), Adidas (in <a href="competizioni.html#ucl" target="_blank" class="linkparole" title="Clicca per scoprire di più sulla UCL">Champions League</a>), Kappa (in <a href="competizioni.html#serieb" target="_blank" class="linkparole" title="Clicca per scoprire di più sulla serie B">Serie B</a>).
+</P>
+
+<a name="calciatori"></a><h6>I CALCIATORI</h6>
+  <P class="contenuto">Ogni squadra in campo deve essere, in partenza, di 11 giocatori. Durante la partita i calciatori di una squadra non possono essere mai meno di 7 (potrebbe capitare in seguito a 5 espulsioni, a quel punto la gara viene automaticamente persa a tavolino).</p>
+  <P class="contenuto">Tra i giocatori in campo deve esserci un <a href="tattica.html#portiere" target="_blank" class="linkparole" title="Clicca per scoprire di più sul ruolo del portiere">portiere<a> e un <a href="#capitano" target="_blank" class="linkparole" title="Clicca per scoprire di più sul capitano">capitano</a>, che porta una fascia di riconoscimento ed è l’unico a poter interpellare l’arbitro (teoricamente).
+</P>
+
+<a name="equipaggiamento"><h6>EQUIPAGGIAMENTO</h6>
+  <P class="contenuto">I calciatori devono indossare una maglia con maniche, pantaloncini, calzettoni, parastinchi e scarpe. Non si possono indossare gioielli.</P>
+  <P class="contenuto">I colori delle due squadre in campo devono essere ben distinguibili e riconoscibili. Il portiere deve avere una divisa di colore diverso rispetto ai compagni, agli avversari e agli ufficiali di gara.</P>
+  <p class="contenuto">Ogni squadra presenta prima dell'inizio della stagione le divise da gara ufficiali che cambiano design ogni anno. Le squadre hanno quasi sempre uno store ufficiale dove i tifosi possono comprare le magliette e i gadget ufficiali della squadra.</P>
+  <p class="contenuto">Le divise sono solitamente 3: la "prima maglia" che è quella più rappresentativa, contenente i colori sociali caratteristici della squadra; la "seconda maglia", o "maglia da trasferta" perché è la prima alternativa per giocare in trasferta se i colori della prima si confondono con quelli degli avversari; la "terza maglia", altra alternativa di colore e design ancora diverso. In alcuni casi viene creata anche la "quarta maglia".</P>
+  <p class="contenuto">Sul davanti della maglia da gara è presente lo stemma della squadra e possono esserci dei badge di riconoscimento ottenuti grazie a particolari risultati raggiunti (ad esempio la vincitrice del campionato di <a href="competizioni.html#seriea" target="_blank" class="linkparole" title="Clicca per scoprire di più sulla serie A">Serie A</a> può sfoggiare sulle maglie dell'anno successivo uno "scudetto"). Su una delle maniche solitamente c'è lo stemma della competizione per cui si sta giocando. Sul retro della maglia e sui pantaloncini è necessario che ci sia un numero che identifichi il giocatore; quasi sempre sulla maglia viene scritto anche il cognome del giocatore che la indossa.</P>
+  <P class="contenuto">Sia sul davanti della maglia che sul retro, ma anche sulle maniche e sui pantaloncini, le squadre hanno degli spazi dedicati agli sponsor.
+</P>
+
+<a name="ufficiali"></a><h6>GLI UFFICIALI DI GARA</h6>
+  <P class="contenuto">L'arbitro è il più importante degli ufficiali di gara, assicura lo svolgimento della gara, ha il compito di far rispettare il regolamento e le sue decisioni sono inappellabili. È lui che tiene il tempo, assegna i minuti di reupero, fa soccorrere gli infortunati, decreta falli, <a href="#punizioni" class="linkparole" title="Clicca per scoprire di più sulle punizioni">punizoni</a>, <a href="#rigori" class="linkparole" title="Clicca per scoprire di più sui rigori">calci di rigore</a>, sanziona i giocatori con cartellini, interrompe il gioco, decreta i gol validi.</p>
+  <P class="contenuto">Gli altri ufficiali di gara aiutano l'arbitro nella gestione della gara, per questo sono chiamati anche "assistenti". I primi due sono gli assistenti di linea, chiamati comunemente "guardalinee", "guardialinee" o "segnalinee". Sono coloro che si posizionano sulle <a href="campo.html#laterale" target="_blank" class="linkparole" title="linea laterale">linee laterali</a> e sono dotati di una bandierina.</P>
+  <P class="contenuto">I guardalinee hanno il compito di segnalare quando il pallone esce dal campo e come riprenderà di conseguenza il gioco (alzando la bandierina in diverse direzioni segnalano chi ha toccato il pallone per ultimo e quindi chi riprenderà il gioco). Ha anche l'importante compito di segnalare il <a class="linkparole" href="#fuorigioco" "Clicca per scoprire le regole del fuorigioco">fuorigioco</a> (ogni guardalinee si occupa di una metà del campo). In alcuni casi possono segnalare anche dei <a href="#falli" class="linkparole" title="Clicca per scoprire di più su falli e scorrettezze">falli o scorrettezze</a> che l'arbitro non è riuscito a vedere.</P>
+  <P class="contenuto">Poi c'è il quarto assistente, chiamato anche "quarto uomo", che si posiziona a bordocampo dal lato delle due panchine. Ha principalmente il compito di segnalare le <a class="linkparole" href="#sostituzioni" "Clicca per scoprire le sostituzioni">sostituzioni</a> (i "cambi") e i minuti di recupero. In più sostituisce l'arbitro in caso di infortunio.</P>
+  <P class="contenuto">Con l'introduzione del <a href="#var" class="linkparole" title="Clicca per scoprire di più sul VAR">VAR</a> (Video Assistant Referee), dove prevista, si aggiungono altri due ufficiali di gara che hanno il compito di aiutare l'arbitro, vedendo le immagini e comunicando via auricolare, a correggere eventuali evidenti errori.</P>
+
+<a name="durata"></a><h6>DURATA DELLA GARA</h6>
+  <P class="contenuto">Le gare ufficiali sono composte da 2 tempi da 45 minuti. Tra un tempo e l'altro c'è un intervallo di 15 minuti. Ogni squadra gioca un tempo attaccando verso una porta e l'altro attaccando verso l'altra porta (inversione di campo). Il tempo "perso" durante la gara viene recuperato alla fine del tempo che si sta giocando e la durata viene stabilita dall’arbitro (sono i cosiddetti "minuti di recupero").</P>
+  <P class="contenuto">L’arbitro decreta l’inizio di ogni tempo con un fischio, la fine del primo tempo è segnalata da due fischi e la fine del secondo tempo (e della partita) da tre fischi.</p>
+  <p class="contenuto">Se la competizione lo prevede, perché la partita non può finire in parità ma ci deve essere una vincitrice, dopo i cosiddetti “tempi regolamentari” (la partita “normale” di 90 minuti) finiti in parità, si giocheranno i tempi supplementari. I tempi supplementari sono 2 da 15 minuti intervallati da una breve interruzione per fare l'inversione di campo.</P>
+  <p class="contenuto">Dopo i tempi supplementari, se la situazione di parità non è cambiata, molto spesso la partita non finisce ancora e sono previsti i tiri di rigore (detti anche "calci di rigore" o semplicemente "rigori"). I tiri di rigore sono una fase in cui le squadre tirano alternandosi una serie di <a href="#rigori" class="linkparole" title="Clicca per scoprire le regole del rigore">calci di rigore</a> per decretare un vincitore della partita.</P>
+  <p class="contenuto">Entrambe le squadre tirano i rigori nella stessa porta, scelta dall’arbitro. Con il lancio di una monetina si decide la squadra che sceglierà se tirare il primo rigore o iniziare per seconda. Ogni tiratore può calciare il pallone solo una volta per tentativo. I tiri di rigore sono normalmente 5 per parte, possono però sia finire prima (se una squadra ha segnato più dell'altra e ha già matematicamente vinto) sia essere prolungati "a oltranza" (nel caso in cui al termine dei 5 rigori per parte si sia ancora in parità). In caso di rigori a oltranza si continua finché alla battuta dei 2 rigori, uno per parte, una squadra sbaglierà e l’altra segnerà.</p>
+  <p class="contenuto">Un giocatore non può calciare 2 tiri di rigore finché tutti i suoi compagni (gli altri giocatori in campo alla fine della partita) non hanno battuto il proprio; quindi prima che possa tirare di nuovo devono aver tirato tutti, incluso il portiere.
+</p>
+
+<a name="inizio"></a><h6>L'INIZIO E LA RIPRESA DEL GIOCO</h6>
+  <P class="contenuto">La partita comincia con il “calcio d’inizio”, battuto con il pallone sul <a href="campo.html#disccentro" target="_blank" class="linkparole" title="dischetto di centrocampo">dischetto di centrocampo.</a> Anche il secondo tempo inizia con un "calcio d'inizio" e viene battuto dalla squadra che non ha iniziato il primo tempo. Prima dell'inizio l'arbitro e i due <a href="#capitano" class="linkparole" title="clicca per scoprire di più sul capitano">capitani</a> si avvicinano per il sorteggio che decreterà chi tirerà il primo calcio d'inizio. L’arbitro lancia una monetina e il capitano vincitore del sorteggio potrà scegliere per la sua squadra in quale porta cominciare ad attaccare o se battere il calcio d'inizio (questa scelta è comunemente chiamata "campo o palla").</P>
+  <P class="contenuto">Entrambe le squadre devono stare nelle rispettive metà campo finché non viene mosso il pallone, l’unico che può stare al di là della <a href="campo.html#lcentro" target="_blank" class="linkparole" title="linea di centrocampo">linea di centrocampo</a> è colui che batte il calcio d'inizio. I giocatori della squadra che non comincia devono stare fuori dal <a href="campo.html#cerchio" target="_blank" class="linkparole" title="cerchio di centrocampo">cerchio di centrocampo</a> fino a che non comincia la partita (ovvero finché non c'è il calcio d'inizio e il pallone viene quindi "messo in gioco").</P>
+  <p class="contenuto">Non è possibile segnare un’autorete (fare gol alla propria squadra) direttamente da calcio d’inizio, mentre una rete nella porta avversaria è possibile. Una volta che il pallone esce dal campo o che il gioco viene interrotto dall'arbitro, ci sono diverse modalità di ripresa del gioco (che saranno spiegate qui di seguito).</p>
+  <p class="contenuto">Una particolare modalità di ripresa del gioco è la rimessa da parte dell’arbitro, a seguito del gioco interrotto per tocco dell’arbitro o per qualsiasi ragione che non riguardi le regole del gioco (come ad esempio l'invasione di campo da persone esterne). L’arbitro prende la palla in mano e la lascia cadere per un calciatore della squadra che per ultima aveva toccato il pallone. Prima che il pallone tocchi il terreno i giocatori devono stare a 4 metri dal pallone stesso. Appena tocca terra il pallone è di nuovo in gioco.
+</P>
+
+<a name="gioco"></a><h6>IN GIOCO O NON IN GIOCO</h6>
+  <P class="contenuto">Il pallone è in gioco dopo il calcio d’inizio. Da quel momento non è più in gioco solo se esce dal campo o se il gioco viene interrotto dall’arbitro. Quando il pallone è in gioco l'arbitro può interrompere il gioco a seguito di infrazioni del regolamento e prendere decisioni tecniche, relative proprio alla ripresa del gioco e/o disciplinari (ammonizioni ed espulsioni). Quando il pallone non è in gioco, l'arbitro può prendere solo decisioni disciplinari.
+</P>
+
+<a name="risultato"></a><h6>IL RISULTATO DELLA GARA</h6>
+  <P class="contenuto">Il risultato, o esito, della gara è sancito dalle reti (gol) segnati dalle due squadre. Una rete viene segnata se la palla supera interamente la <a href="campo.html#lporta" target="_blank" class="linkparole" title="linea di porta">linea di porta</a> entrando nell'area compresa tra i pali e la traversa (<a href="campo.html#porta" target="_blank" class="linkparole" title="porta">porta</a>). La rete è valida se non ci sono state infrazioni del regolamento durante l’azione che ha portato al gol. Una rete non può essere segnata direttamente da rimessa laterale o rimessa dell’arbitro e un'autorete non è valida se segnata direttamente da una ripresa del gioco.
+  Il portiere che lancia con le mani il pallone verso la porta avversaria può regolarmente segnare una rete.</P>
+  <p class="contenuto">Dopo che viene segnata una rete, il gioco viene ripreso da un calcio d'inizio battuto dalla squadra che ha subito il gol.</p>
+  <P class="contenuto">La squadra che fa più reti/gol vince la gara/partita.
+</P>
+
+<a name="fuorigioco"></a> <h6>IL FUORIGIOCO</h6>
+  <P class="contenuto">Un calciatore di trova in posizione di fuorigioco quando è vicino alla <a href="campo.html#lporta" target="_blank" class="linkparole" title="linea di porta">linea di porta</a> più del pallone e più del penultimo avversario. Il calciatore in fuorigioco non può riceve la palla e non può interferire col gioco altrimenti il gioco viene interrotto e ripreso con un <a href="#punizioni" class="linkparole" title="clicca per scoprire di più sulle punizioni">calcio di punizione indiretto</a> a favore della squadra avversaria.</P>
+  <P class="contenuto">Questo significa che il giocatore che vuole ricevere un passaggio dal compagno e andare verso la porta avversaria deve trovarsi, nel momento in cui il pallone si stacca dal piede del compagno (quando inizia il passaggio), in una posizione per cui ha davanti a sé almeno 2 giocatori avversari (solitamente il <a href="tattica.html#portiere" target="_blank" class="linkparole" title="clicca per scoprire di più sul ruolo del portiere">portiere</a> e un <a href="tattica.html#difensori" target="_blank" class="linkparole" title="clicca per scoprire di più sul ruolo del difensore">difensore</a>).</P>
+  <P class="contenuto">Gli assistenti di linea segnalano l'infrazione del fuorigioco quando il giocatore in fuorigioco partecipa all'azione. Il fuorigioco non viene punito con decisioni disciplinari (né ammonizione né espulsione).</P>
+  <P class="contenuto">Se la partita prevede l'utilizzo del <a href="#var" class="linkparole" title="Clicca per scoprire di più sul VAR">VAR</a>, il fuorigioco viene segnalato comunque dall’assistente di linea ma in caso di rete questo viene controllato anche dagli assistenti al VAR, che con la tecnologia possono oggettivamente stabilire se c’è stata un’infrazione di fuorigioco che rende il gol non valido. Per questo motivo ora c’è la tendenza da parte dei guardalinee ad aspettare che la palla sia entrata in rete prima di segnalare il fuorigioco che hanno visto: in questo modo, in caso di errore dell’assistente, il VAR può intervenire convalidando la rete che invece era valida oppure confermare la segnalazione di fuorigioco.</p>
+  <P class="contenuto">Il cosiddetto "fuorigioco di rientro" è quella situazione in cui il giocatore che riceve palla si trovava in fuorigioco nel momento in cui è partito il passaggio ma quando ha effettivamente ricevuto il pallone la sua posizione era regolare. In questi casi l'infrazione è sempre segnalata.</P>
+  <P class="contenuto">La posizione di fuorigioco è attualmente stabilita dalla posizione di qualsiasi parte del corpo tranne braccia e mani.
+</P>
+
+<a name="falli"></a><h6>FALLI E SCORRETTEZZE</h6>
+  <P class="contenuto">Un "fallo" è un'infrazione del regolamento punibile tecnicamente mentre una "scorrettezza" è un'infrazione punibile disciplinarmente. Alcune infrazioni possono essere contemporaneamente falli e scorrettezze.</P>
+  <P class="contenuto">Alcuni falli vengono puniti con un <a href="#punizioni" class="linkparole" title="clicca per scoprire di più sulle punizioni">calcio di punizione diretto</a> a favore dell'avversario, per esempio: calciare, fare uno sgambetto, colpire, tentare di colpire, caricare, spingere, trattenere, sputare, ostacolare l’avversario; effettuare un contrasto o saltare su un avversario; toccare il pallone con le mani volontariamente.</P>
+  <P class="contenuto">Si puniscono con un <a href="#punizioni" class="linkparole" title="clicca per scoprire di più sulle punizioni">calcio di punizione indiretto</a>, invece, il giocare in modo pericoloso (detto anche "gioco pericoloso"); ostacolare l’avversario senza contatto fisico; impedire al portiere di liberarsi del pallone (che lo stia facendo con le mani o con un calcio).</p>
+  <p class="contenuto">Ci sono anche falli che solo il <a href="tattica.html#portiere" target="_blank" class="linkparole" title="clicca per scoprire di più sul ruolo del portiere">portiere</a> può commettere: tenere il pallone tra le mani più di 6 secondi, dopo aver dato via il pallone toccarlo con le mani prima che qualcun altro lo abbia toccato, toccare il pallone con le mani dopo un passaggio di un compagno avvenuto con i piedi, toccare il pallone con le mani se ricevuto da rimessa laterale di un compagno.</p>
+
+  <P class="contenuto">Le scorrettezze possono avere come conseguenza una ammonizione (cartellino giallo) o un'espulsione (cartellino rosso). L'arbitro segnala l'ammonizione o l'espulsione mostrando il cartellino al giocatore. Il giocatore ammonito resta regolarmente in campo ma se commette un’altra scorrettezza da ammonizione viene espulso. L’espulsione comporta l’uscita immediata dal terreno di gioco e una squalifica (di minimo 1 giornata ma è il giudice sportivo a indicare, in base al referto dell’arbitro della partita, quante partite il giocatore dovrà saltare).</P>
+  <P class="contenuto">Alcune scorrettezze da ammonizione sono: comportamento antisportivo, protestare con <a href="#ufficiali" class="linkparole" title="clicca per scoprire di più sugli ufficiali di gara">gli ufficiali di gara</a>, trasgredire ripetutamente le regole, non rispettare la distanza prevista per un calcio da fermo (<a href="#punizioni" class="linkparole" title="clicca per scoprire di più sulle punizioni">punizione</a>, <a href="#angolo" class="linkparole" title="clicca per scoprire di più sul calcio d'angolo">calcio d'angolo</a> o <a href="#rigori" class="linkparole" title="clicca per scoprire di più sui rigori">rigore</a>), ritardare la ripresa del gioco, uscire ed entrare volontariamente sul terreno di gioco senza l’assenso dell’arbitro.</P>
+  <P class="contenuto">Alcune scorrettezze da espulsione sono: grave fallo, condotta violenta, sputare contro una persona, condotta gravemente sleale come evitare la segnatura di una rete con un tocco volontario di mano del pallone o con un fallo sull’avversario, linguaggio o gesti ingiuriosi/offensivi/blasfemi.</P>
+  <P class="contenuto">Dopo un certo numero di ammonizioni prese nel corso di più partite, il giocatore entra in "diffida" (è "diffidato"), ovvero è nella condizione per cui se prende un un'altra ammonizione dovrà saltare la partita successiva (squalifica di una giornata).</p>
+  <p class="contenuto">Dal 2019, le sanzioni disciplinari vengono applicate anche all’<a href="#allenatore" target="_blank" class="linkparole" title="clicca per scoprire di più sull'allenatore">allenatore</a>, allo staff e ai giocatori che durante la partita si trovano in panchina e nell’area tecnica (area nei pressi della panchina). Solitamente questo accade per eccessive proteste nei confronti degli ufficiali di gara. Prima l’arbitro aveva già il potere di allontanare dal campo un membro dello staff o della panchina ma ora con le ammonizioni questi possono anche entrare in diffida.
+  </P>
+  <P class="contenuto">In alcune occasioni l'arbitro può decidere di non interrompere il gioco a seguito di un'infrazione del regolamento se la squadra che ha subito il fallo o la scorrettezza si trova comunque in una situazione di vantaggio. Si tratta della cosiddetta "norma del vantaggio". L'azione quindi viene fatta continuare, ma in caso di decisioni disciplinari l'arbitro provvederà comunque a punire il giocatore che ha commesso fallo una volta finita l'azione di gioco.</p>
+  <P class="contenuto">Viene chiamato comunemente "fallo tattico" un fallo, solitamente una trattenuta, commesso volontariamente per interrompere il gioco, anche a costo di un'ammonizione, per evitare il proseguimento di un'azione che avrebbe potuto portare a subire gol.
+</P>
+
+<a name="punizioni"></a><h6>I CALCI DI PUNIZIONE</h6>
+  <P class="contenuto">Il calcio di punizione è una delle modalità di ripresa del gioco a seguito di <a href="#falli" class="linkparole" title="clicca per scoprire di più su falli e scorrettezze">un fallo o di una scorrettezza</a>. Il calcio di punizione (o più semplicemente "punizione") può essere diretto o indiretto.</p>
+  <P class="contenuto">Il calcio di punizione diretto viene assegnato quando viene commesso un fallo, al di fuori dell'<a href="campo.html#arigore" target="_blank" class="linkparole" title="area di rigore">area di rigore</a>. Il calcio di punizione diretto prevede la possibilità di segnare direttamente una rete.</p>
+  <p class="contenuto">Un calcio di punizione indiretto viene assegnato quando c'è un'infrazione di <a href="#fuorigioco" class="linkparole" title="clicca per scoprire le regole del fuorigioco">fuorigioco</a> o scorrettezze particolari previste dal regolamento. Non si può segnare direttamente una rete da calcio di punizione indiretto, il pallone deve essere toccato da almeno un altro calciatore prima che possa finire in rete.</p>
+  <p class="contenuto">Il calcio di punizione indiretto può essere fischiato anche in <a href="campo.html#arigore" target="_blank" class="linkparole" title="area di rigore">area di rigore</a>. Solitamente, le rare volte che questo accade, è la conseguenza di un fallo del <a href="tattica.html#portiere" target="_blank" class="linkparole" title="clicca per scoprire di più sul ruolo del portiere">portiere</a> (spesso il predere con le mani il pallone passato dai piedi del compagno). La particolarità di questo tipo di calci di punizione è che i giocatori che difendono si trovano spesso a ridosso della <a href="campo.html#lporta" target="_blank" class="linkparole" title="linea di porta">linea di porta</a> insieme al portiere e quasi tutti i giocatori si ritrovano in pochi metri.</p>
+  <p class="contenuto">Per la battuta di un calcio di punizione gli avversari devono stare a 9,15 metri di distanza dal pallone e possono formare la cosiddetta "barriera" (alcuni giocatori si mettono uno affianco all'altro, su indicazione del proprio <a href="tattica.html#portiere" target="_blank" class="linkparole" title="clicca per scoprire di più sul ruolo del portiere">portiere</a>, per impedire all'avversario di far passare il pallone).</P>
+  <P class="contenuto">Può capitare che per battere un calcio di punizione in modo veloce, la squadra non chieda il rispetto della distanza dal pallone. In questo caso gli avversari non commettono infrazione se non rispettano la distanza, anche nel caso in cui intercettino il pallone.</P>
+  
+<a name="rigori"></a><h6>IL RIGORE</h6>
+  <P class="contenuto">Il calcio di rigore è il modo di riprendere il gioco a seguito di un fallo subito nell'<a href="campo.html#arigore" target="_blank" class="linkparole" title="area di rigore">area di rigore</a> che fuori da essa comporterebbe un calcio di punizione diretto. Viene assegnato quindi quando la squadra difendente commette fallo nella propria area di rigore.</P>
+  <P class="contenuto">Il calcio di rigore consiste nel posizionare il pallone sul <a href="campo.html#discrigore" target="_blank" class="linkparole" title="dischetto del rigore">dischetto del rigore</a> e tirare il pallone verso la porta. Il tiratore e il <a href="tattica.html#portiere" target="_blank" class="linkparole" title="clicca per scoprire di più sul ruolo del portiere">portiere</a> avversario sono gli unici a poter stare dentro l'area prima della battuta. Il tiratore è chiamato anche "rigorista", solitamente scelto dall'<a href="#allenatore" class="linkparole" title="clicca per scoprire di più sull'allenatore">allenatore</a> in base agli allenamenti.</P>
+  <p class="contenuto"> Il portiere deve tenere almeno un piede sulla <a href="campo.html#lporta" target="_blank" class="linkparole" title="linea di porta">linea di porta</a> fino al momento in cui il tiratore tocca il pallone. Quando tutto è pronto l’arbitro fischia e il pallone rientra in gioco nel momento in cui viene mosso in avanti.</p>
+  <p class="contenuto">Il tiratore non può ritoccare il pallone dopo aver calciato, a meno che qualcun altro lo faccia prima del suo secondo tocco. Se il tiratore tocca due volte di seguito il pallone, il gioco è interroto e l'arbitro assegna un <a href="#punizioni" class="linkparole" title="clicca per scoprire di più sulle punizioni">calcio di punizione indiretto</a> in favore degli avversari.</p>
+  <P class="contenuto">Da regolamento ci sono delle infrazioni specifiche, in relazione alla battuta di un calcio di rigore e all'esito del tiro (gol o non gol): il pallone non può essere calciato all’indietro, questo provoca un calcio di punizione indiretto contro; fare una finta è permesso, ma fare la finta chiamata “paradinha” (far finta di tirare in una direzione e poi farlo nell’altra) non è regolare quindi l’arbitro farà tirare il calcio di rigore ma ammonirà in seguito il calciatore e assegnerà un calcio di punizione indiretto contro; se calcia un tiratore diverso da quello identificato c’è ammonizione per colui che calcia e punizione indiretta in favore dell’avversario; se il portiere commette un’infrazione e la rete viene comunque segnata questa è valida, altrimenti c’è la ripetizione del calcio di rigore e l’ammonizione del portiere; se un calciatore difendente entra in area prima che possa farlo e la rete viene segnata comunque, questa è valida ma se non viene segnata il calcio di rigore si ripete; se l’invasione è di un calciatore della squadra che sta tirando il calcio di rigore avviene il contrario (se la rete viene segnata il calcio di rigore va ripetuto mentre se il calcio di rigore viene “sbagliato” c’è un calcio di punizione indiretto per l’avversario).</P>
+
+<a name="rimessa"></a><h6>LA RIMESSA LATERALE</h6>
+  <P class="contenuto">La "rimessa dalla linea laterale" detta anche semplicemente "rimessa laterale" è la ripresa del gioco che segue l'uscita del pallone dalla <a href="campo.html#laterale" target="_blank" class="linkparole" title="linea laterale">linea laterale</a>. Viene assegnata alla squadra avversaria a quella che per ultima ha toccato il pallone prima che uscisse. Uno dei giocatori della squadra che ha ottenuto la rimessa laterale prende il pallone con entrambe le mani e lo porta sopra la testa per poi lanciarlo sul terreno di gioco.</P>
+  <p class="contenuto">Gli altri calciatori devono stare a 2 metri dal battitore (pena l’ammonizione). Il pallone è in gioco appena lascia le mani del battitore. Il giocatore che esegue la rimessa deve tenere i piedi all’esterno del terreno di gioco o sulla linea laterale. Se avviene un’infrazione, la rimessa è assegnata alla squadra avversaria (rimessa invertita).
+</p>
+
+<a name="rinvio"></a><h6>IL RINVIO</h6>
+  <P class="contenuto">Il calcio di rinvio (o "rinvio") è uno dei due modi (insieme al <a href="#angolo" class="linkparole" title="clicca per scoprire il calcio d'angolo">calcio d'angolo</a>) per riprendere il gioco dopo che la palla è uscita dal campo superando la <a href="campo.html#lporta" target="_blank" class="linkparole" title="linea di porta">linea di porta</a> (senza andare in porta). In particolare si effettua un rinvio se l'ultimo a toccare il pallone prima che uscisse dalla linea di porta è un giocatore della squadra "attaccante", cioè la squadra che fa uscire la palla dalla linea di porta della porta avversaria.</P>
+  <p class="contenuto">Il rinvio si esegue posizionando il pallone in un punto all’interno dell’<a href="campo.html#aporta" target="_blank" class="linkparole" title="area di porta">area di porta</a> (detta anche "area piccola") e calciando il pallone, che rientra così in gioco. I calciatori avversari devono stare fuori dall’<a href="campo.html#arigore" target="_blank" class="linkparole" title="area di rigore">area di rigore</a> finché il pallone non è di nuovo in gioco (a meno che la battuta non sia fatta rapidamente e gli avversari non abbiamo avuto tempo di uscire).</p>
+  <p class="contenuto">Il calciatore che tira il calcio di rinvio non può toccarlo nuovamente prima che sia toccato da altri (pena il <a href="#punizioni" class="linkparole" title="clicca per scoprire di più sulle punizioni">calcio di punizione indiretto</a> per la squadra avversaria). Per le altre infrazioni il calcio di rinvio deve essere ripetuto. Solitamente è il <a href="tattica.html#portiere" target="_blank" class="linkparole" title="clicca per scoprire di più sul ruolo del portiere">portiere</a> a battere il calcio di rinvio essendo una rimessa in gioco che si effettua nella propria area di porta.
+</p>
+
+<a name="angolo"></a><h6>IL CALCIO D'ANGOLO</h6>
+  <P class="contenuto">Il calcio d'angolo è il modo di riprendere il gioco dopo che il pallone sia uscito dalla linea di porta e dove l'ultimo a toccare sia stato un giocatore della squadra "difendente", senza che ci sia stata una rete. Il calcio d'angolo è assegnato alla squadra che attacca verso la <a href="campo.html#lporta" target="_blank" class="linkparole" title="linea di porta">linea di porta</a> dalla quale è uscito il pallone.</P>
+  <P class="contenuto">Si esegue posizionando il pallone all'interno dell'<a href="campo.html#aangolo" target="_blank" class="linkparole" title="area d'angolo">area d'angolo</a> più vicina al punto in cui è uscito il pallone. I calciatori avversari devono stare almeno a 9,15 metri dall’area d’angolo finché il pallone non si muove; Il calciatore che batte il calcio d’angolo non può toccare il pallone di nuovo finché un altro non lo tocca.</P>
+
+  <p class="contenuto">Il calcio d’angolo è assegnato anche nel caso in cui una squadra faccia autorete direttamente riprendendo il gioco. La rete non viene convalidata ma si riprende con un calcio d'angolo che va alla squadra avversaria.
+</p>
+
+<a name="sostituzioni"></a><h6>SOSTITUZIONI</h6>
+  <P class="contenuto">Le sostituzioni o "cambi" sono decise dall'<a href="#allenatore" class="linkparole" title="clicca per scoprire di più sull'allenatore">allenatore</a> e consistono nel fare entrare un giocatore al posto di un altro, che esce dal campo. Il quarto uomo alza un tabellone luminoso, dopo aver avuto il consenso dell'arbitro a procedere con la sostituzione, con i numeri dei giocatori coinvolti nel cambio (in rosso il numero del giocatore che esce e in verde il numero del giocatore che entra). Solo quando il giocatore che deve essere sostituito è uscito dal campo può entrare il sostituto.</P>
+  <P class="contenuto">Il numero di sostituzioni effettuabili è solitamente di 3 giocatori, ma nell'ultimo anno e mezzo si è assistito alla nuova regola dei 5 cambi effettuabili in 3 "finestre" temporali. Questa eccezionale deroga è legata alla pandemia da COVID-19 che ha cambiato i calendari di molte squadre, li ha resi più fitti di impegni ravvicinati e i vertici del calcio hanno pensato che fosse necessario ruotare di più i giocatori per non affaticarli e rischiare di incorrere in infortuni gravi.
+</P>
+</section>
+
+<section>
+<a name="tecnologie"></a><h5 class="sticky-top">Tecnologie</h5>
+
+
+<div class="indice">
+  <P>In questa sezione:</P>
+  <ul class="listaprincipale">
+    <li class="elementoprincipale"><a href="#equiarbitro">Equipaggiamento dell'arbitro</a></li>
+    <li class="elementoprincipale"><a href="#glt">Goal Line Technology</a></li>
+    <li class="elementoprincipale"><a href="#var">Var</a></li>
+  </ul>
+</div>
+
+<a name="equiarbitro"></a><h6>EQUIPAGGIAMENTO DELL'ARBITRO</h6>
+  <p class="contenuto">Gli arbitri delle competizioni maggiori hanno a disposizione oggi, degli strumenti che li possono aiutare nella direzione della gara. Dal 2007 gli arbitri sono collegati tramite auricolari a tutti gli altri <a href="#ufficiali" class="linkparole" title="clicca per scoprire di più sugli ufficiali di gara">ufficiali di gara</a> in modo da poter comunicare a distanza in modo immediato. Questo permette di prendere decisioni in modo veloce e con un confronto tra gli assistenti. Ovviamente la tecnologia si è evoluta nel tempo fino ad arrivare alla comunicazione con gli assistenti VAR che si trovano fuori dal campo.</P>
+  <p class="contenuto">A partire dal 2014 è stato introdotto uno strumento per gestire meglio i <a href="#punizioni" class="linkparole" title="Clicca per scoprire di più sui calci di punizione">calci di punizione</a>. Si tratta di una bomboletta di spray evanescente che viene usata per segnare sul campo il punto di battuta della punizione e la distanza minima della barriera. Lo spray viene spruzzato sul terreno per evitare che i giocatori possano spostarsi quando l'arbitro non li sta guardando. Dopo poco tempo lo spray scompare dal terreno.</p>
+  <p class="contenuto">Anche l'orologio dell'arbitro si è evoluto. Oggi nelle competizioni maggiori si usano smartwatch che permettono all'arbitro non solo di cronometrare il tempo ma, collegati ad altre tecnologie come la Goal Line Technology, fare molto altro.
+</p>
+
+<a name="glt"></a><h6>GOAL LINE TECHNOLOGY</h6>
+  <p class="contenuto">La tecnologia è stata impiegata per risolvere il problema dei cosiddetti "gol fantasma", quei gol/non gol in cui l'occhio umano può avere difficoltà a capire se la palla ha effettivamente superato interamente la <a href="campo.html#lporta" target="_blank" class="linkparole" title="linea di porta">linea di porta</a> e quindi risultare un gol valido. La Goal Line Technology (o "tecnologia di porta") serve proprio a questo.</p>
+  <p class="contenuto">Si tratta di un sistema composto da diverse videocamere che sono in grado di catturare immagini a 500 fps e inviarle ad un computer che le elabora e fa vibrare lo smartwatch dell'arbitro solo in caso di gol valido, tutto questo quasi in tempo reale.
+</p>
+
+<a name="var"></a><h6>VAR</h6>
+  <div class="image"><img src="img/VAR.png" width="170" height="111,3" alt="Logo VAR">
+  <p class="didascalia">(Il logo del Var)</p></div>
+  <p class="contenuto">Nel 2016 (dalla stagione 2017/2018 in Italia) viene finalmente introdotta una tecnologia che ha segnato un cambiamento molto importante nel calcio dei massimi livelli: il Video Assistant Referee o VAR che nasce per aiutare a correggere e ridurre gli errori arbitrali. Da molto tempo si parlava della "moviola in campo", considerata necessaria da molti a fronte degli errori che umanamente gli arbitri commettevano. Ovviamente però, anche dopo l'introduzione del Var, ci sono state opinioni contrastanti e grandi critiche sul modo in cui questo strumento viene utilizzato.</p>
+  <p class="contenuto">Attualmente in Italia viene usato solamente per la <a href="competizioni.html#seriea" target="_blank" class="linkparole" title="area d'angolo">Serie A</a> e la <a href="competizioni.html#coppaitalia" target="_blank" class="linkparole" title="scopri la Coppa Italia">Coppa Italia</a> si programma di espanderne l'utilizzo anche all'intero campionato di <a href="competizioni.html#serieb" target="_blank" class="linkparole" title="scopri la Serie B">Serie B</a>.</p>
+  <p class="contenuto">La funzione del Var non è sostituire gli ufficiali di gara ma di correggere "chiari errori" commessi. Si può applicare quindi solo a episodi che riguardano gol, <a href="#rigori" class="linkparole" title="clicca per scoprire di più sui rigori">rigori</a>, espulsioni dirette (cartellini rossi) e gli scambi di persona.</p>
+  <p class="contenuto">Gli addetti al Var sono due (chiamati VAR e AVAR, Assistant Video-Assistant Referee) e i nomi vengono designati e resi noti prima delle gare come tutto il resto della <a href="#ufficiali" class="linkparole" title="clicca per scoprire di più sugli ufficiali di gara">squadra arbitrale</a>. Si trovano in una postazione che ha davanti quattro schermi e sono in constante comunicazione con l'arbitro in campo tramite auricolari. Gli assistenti al Var analizzano le immagine delle azioni della partita e possono segnalare all'arbitro errori oggettivi (come la posizione di fuorigioco non vista durante l'azione di un gol) o possibili errori di valutazione dell'arbitro di campo che può essere invitato ad andare a rivedere l'episodio attraverso uno schermo installato a bordocampo. La decisione finale resta comunque in mano all'arbitro considerato il Var uno strumento di supporto che non sostituisce la competenza dell'arbitro.</p>
+  <P class="contenuto">Per episodi in cui l'arbitro valuta e prende decisioni in campo e il Var semplicemente controlla che non ci siano stati errori evidenti, la partita continua normalmente e si dice che viene fatto un "silent check". Quando invece occorre più tempo per controllare episodi dubbi, ad esempio quelli riguardanti <a href="#falli" class="linkparole" title="clicca per scoprire di più su falli e scorrettezze">falli</a> da rigore o da espulsione non evidentissimi, l'arbitro interrompe il gioco e fa un gesto con le mani che ricorda la forma rettangolare di uno schermo. Una volta presa la decisione finale l'arbitro ripete il gesto e comunica la decisione.</p>
+  <p class="contenuto">È proibito da parte delle squadre richiedere l’utilizzo del Var e ogni protesta deve essere sanzionata con l’ammonizione.
+</p>
+</section>
+
+<section>
+
+<a name="protagonisti"></a><h5 class="sticky-top">Protagonisti</h5>
+
+<div class="indice">
+  <P>In questa sezione:</P>
+  <ul class="listaprincipale">
+    <li class="elementoprincipale"><a href="#società">La società</a></li>
+    <li class="elementoprincipale"><a href="#allenatore">L'allenatore</a></li>
+    <li class="elementoprincipale"><a href="#staff">Staff medico</a></li>
+    <li class="elementoprincipale"><a href="#capitano">Il capitano</a></li>
+    <li class="elementoprincipale"><a href="#procuratore">Il procuratore</a></li>
+    <li class="elementoprincipale"><a href="#bomber">Il bomber</a></li>
+    <li class="elementoprincipale"><a href="#titolare">Il titolare</a></li>
+    <li class="elementoprincipale"><a href="#riserva">La riserva</a></li>
+    <li class="elementoprincipale"><a href="#svincolato">Lo svincolato</a></li>
+  </ul>
+</div>
+
+<a name="società"></a><h6>LA SOCIETÀ</h6>
+  <p class="contenuto">Una squadra di calcio è prima di tutto una società e quindi include dei dirigenti e dei dipendenti che lavorano per farla evolvere e guadagnare, oltre ai calciatori che sono in prima linea. Ai vertici della società ci sono figure come il presidente, l'amministratore delegato, il direttore sportivo (che si occupa dei rapporti tra tesserati e società e contatta le altre società durante il <a href="oltre.html#calciomercato" target="_blank" class="linkparole" title="Clicca per scoprire di più sul calciomercato">calciomercato</a> (quel periodo dell'anno in cui è concesso ai giocatori di cambiare squadra e firmare un nuovo contratto).</p>
+  <p class="contenuto">Con il termine "società", nel calcio, si intende per la maggior parte delle volte proprio la classe dirigente ed è la "società" che sigla contratti con i calciatori, investe il denaro, cura gli accordi con gli sponsor, gestisce la comunicaizone e svolge tutte quelle attività che non riguardano strettamente la gara sportiva.
+</p>
+
+<a name="allenatore"></a><h6>L'ALLENATORE</h6>
+  <p class="contenuto">Parlando invece del gioco del calcio in sé, l'allenatore (detto anche "mister") è sicuramente una delle figure più importanti e determinanti nei risultati di una squadra. È la persona che dirige l'allenamento, sceglie la formazione titolare (gli 11 giocatori che scendono in campo) e i cambi (i giocatori che entrano durante la partita) ma soprattutto ha il compito di gestire la "rosa" (l'insieme di tutti gli atleti tesserati che fanno parte della squadra) e creare un buon clima di lavoro.</p>
+  <p class="contenuto">L'allenatore porta in una squadra la sua idea di allenamento e di gioco e determina in che modo i giocatori si posizioneranno in campo e ciò che dovranno provare a fare per arrivare alla vittoria. Essendo uno sport di squadra è fondamentale che ci sia un allenatore che riesca a dare obiettivi e compiti precisi in modo che la squadra sia unita nel fare ciò che l'allenatore chiede.</p>
+  <p class="contenuto">Un bravo allenatore sa tirare fuori il meglio dai giocatori che ha a disposizione. Deve conquistarsi la fiducia dei suoi giocatori e molto spesso deve anche lavorare a livello psicologico per motivarli e raggiungere così la vittoria.</p>
+  <p class="contenuto">Durante la partita l’allenatore sta in panchina e da lì dà tutte le indicazioni e correzioni che i giocatori devono seguire, anche singolarmente chiamandoli per nome. L'allenatore, per farsi sentire, molto spesso è costretto a urlare per raggiungere anche il giocatore dall'altra parte del campo.</p>
+  <p class="contenuto">Quando la società sceglie un allenatore si aspetta che raggiunga degli obiettivi, spesso in termini di vittorie, che vengono chiariti proprio insieme all'allenatore all'inizio della stagione.</p>
+  <p class="contenuto">Se il lavoro dell’allenatore (e quindi i risultati in campo) si rivelano deludenti rispetto alle aspettative della società, questa può esonerarlo e sostituirlo in qualsiasi momento della stagione (mentre i giocatori possono trasferirsi in altre squadre solo durante i periodi di <a href="oltre.html#calciomercato" target="_blank" class="linkparole" title="Clicca per scoprire di più sul calciomercato">calciomercato</a>). Allo stesso modo, l’allenatore può dimettersi in qualsiasi momento della stagione se decide che non vuole più andare avanti ad allenare la squadra.</p>
+  <p class="contenuto">Solitamente l'allenatore prima della partita (il giorno prima) fa la conferenza stampa dove risponde alle curosità dei giornalisti, in particolare sulla partita e l'avversario che incontrerà di lì a breve. Nel post-partita viene intervistato dai giornalisti presenti allo stadio che vogliono raccogliere le impressioni a caldo sulla partita appena disputata. La comunicazione con i giornalisti rientra sicuramente negli impegni dell'allenatore.
+</p> 
+ 
+<a name="staff"></a><h6>STAFF MEDICO</h6>
+  <p class="contenuto">Lo staff medico della squadra, composto da professionisti del campo medico, assiste i giocatori sia intervenendo prontamente immediatamente dopo un infortunio, più o meno grave, sul campo entrando a soccorrere il calciatore (dopo che l'arbitro ha interrotto il gioco e approvato l'entrata in campo) sia nella fase post-infortunio (riabilitazione e recupero). In più si occupano della salute dei durante tutto l'anno, quotidianamente.
+</p>
+
+<a name="capitano"></a><h6>IL CAPITANO</h6>
+  <p class="contenuto">Il capitano della squadra è il giocatore che, da regolamento, rappresenta l'intera squadra davanti all'arbitro, infatti è l'unico che può interpellarlo (teoricamente). Il capitano ha anche il compito di rappresentare la squadra nei sorteggi che l'arbitro deve fare prima dell'inizio della partita e l'onore di alzare il trofeo per primo durante le cerimonie di premiazione.</p>
+  <p class="contenuto">Il capitano va scelto tra i membri della squadra con attenzione. Solitamente è il giocatore che più incarna i principi e i valori della società e deve essere leader dentro e fuori dal campo, tenere la squadra unita e avere la fiducia dei suoi compagni. Perciò è un ruolo molto delicato e non tutti possono svolgerlo bene. Deve essere un punto di riferimento per i suoi compagni e per i tifosi, soprattutto nei momenti di difficoltà.
+</p>
+
+<a name="procuratore"></a><h6>IL PROCURATORE</h6>
+  <p class="contenuto">Il procuratore sportivo (detto anche "agente" o semplicemente "procuratore") è la persona che negozia, per conto degli atleti, i contratti con le società sportive ottenendo, in cambio, una percentuale dell'ingaggio. Ultimamente alcuni di questi sono diventati famosi per le loro trattative e ogni calciatore ormai ne ha uno. Il procuratore italiano più "famoso" e considerato più abile ad oggi è Mino Raiola che rappresenta molti giocatori che sono considerati tra i migliori d'Europa.
+</p>
+
+<a name="bomber"></a><h6>IL BOMBER</h6>
+  <p class="contenuto">Un giocatore, quasi sempre un <a href="tattica.html#attaccanti" target="_blank" class="linkparole" title="clicca per scoprire di più sul ruolo di attaccante">attaccante</a> viene chiamato "bomber" dopo che ha dimostrato di essere un giocatore che fa molti gol a stagione (ogni anno). Riesce sempre in qualche modo a segnare e quindi a far vincere la sua squadra. Il vero bomber è quello che riesce a ripetersi negli anni, continuando sempre a segnare molti gol.
+</p>
+
+<a name="titolare"></a><h6>IL TITOLARE</h6>
+  <p class="contenuto">Un "titolare" è un giocatore che difficilmente viene lasciato in panchina dall'allenatore, è sempre (o quasi) titolare, appunto. Solitamente una squadra tende ad avere dei "titolari" cioè dei giocatori che, per quella stagione o con quel allenatore, non escono quasi mai dal campo (non vengono sostituiti e giocano dall'inizio).
+</p>
+
+<a name="riserva"></a><h6>LA RISERVA</h6>
+  <p class="contenuto">Una "riserva" è un giocatore che non gioca quasi mai dall'inizio, spesso può entrare nel corso della gara o in caso di infortunio di un titolare. La "riserva" deve essere sempre pronta e sfruttare tutte le occasioni che ha per convincere l'allenatore a farlo diventare un titolare. Un bravo allenatore fa sentire anche chi gioca meno, importante per il gruppo e dà fiducia a tutti.
+</p>
+
+<a name="svincolato"></a><h6>LO SVINCOLATO</h6>
+  <p class="contenuto">Quando un giocatore non ha un contratto con nessuna squadra si dice che è "svincolato". Il calciatore svincolato può essere acquistato da una squadra in qualsiasi momento della stagione (accade lo stesso per gli allenatori senza contratto, anch'essi "svincolati").
+</p>
+
+</section>
+
+<section>
+<a name="organismi"></a><h5 class="sticky-top">Organi, Leghe e Federazioni</h5>
+
+<div class="indice">
+  <P>In questa sezione:</P>
+  <ul class="listaprincipale">
+    <li class="elementoprincipale"><a href="#nazionali">Nazionali</a></li>
+      <ul>
+        <li><a href="#figc">- Figc</a></li>
+        <li><a href="#legaseriea">- Lega serie A</a></li>
+        <li><a href="#aia">- AIA</a></li>
+        <li><a href="#legab">- Lega B</a></li>
+        <li><a href="#legapro">- Lega Pro</a></li>
+        <li><a href="#lnd">- LND</a></li>
+        
+      </ul>
+    <li class="elementoprincipale"><a href="#internazionali">Internazionali</a></li>
+      <ul>
+        <li><a href="#uefa">- Uefa</a></li>
+        <li><a href="#fifa">- Fifa</a></li>
+        <li><a href="#ifab">- IFAB</a></li>
+      </ul>
+  </ul>
+</div>
+
+<a name="nazionali"></a><h6 class="sezione">Nazionali</h6>
+
+<a name="figc"></a><h6>FIGC</h6>
+
+  <div class="image"><img id="imglogo" src="img/FIGC.png" width="89,6" height="150" alt="Logo FIGC"></div>
+  <p class="contenuto">La FIGC, Federazione Italiana Giuoco Calcio (chiamata anche "federcalcio") è l’organo che si occupa del calcio in italia e coordina sia i vari campionati a livello professionistico che quelli a livello non professionistico. È una delle federazioni della <a href="#uefa" class="linkparole" title="scopri di più sulla UEFA">UEFA</a>. È affiliata al CONI (Comitato Olimpico nazionale italiano, che governa lo sport in italia).</p>
+  <p class="contenuto"><i class="fas fa-hand-point-right"></i><a class="didascalia" href="https://www.figc.it/it/federazione/" target="_blank" title="Il sito ufficiale della FIGC">Sito ufficiale FIGC</a>
+</p>
+
+<a name="legaseriea"></a><h6>LEGA SERIE A</h6>
+
+  <div class="image"><img id="imglogo" src="img/SerieA.png" width="100.1" height="150" alt="Logo Lega Serie A"></div>
+  <p class="contenuto">La Lega Nazionale Professionisti Serie A (LNPA), abbreviata in "Lega Serie A", è l'organo che gestisce i più importanti tornei calcistici per club in Italia. Organizza <a href="competizioni.html#seriea" target="_blank" class="linkparole" title="clicca per scoprire di più sulla Serie A">Serie A</a>, <a href="competizioni.html#coppaitalia" target="_blank" class="linkparole" title="clicca per scoprire di più sulla Coppa Italia">Coppa italia</a>, <a href="competizioni.html#supercoppai" target="_blank" class="linkparole" title="clicca per scoprire di più sulla Supercoppa Italiana">Supercoppa italiana</a>, Campionato primavera 1, Coppa Italia Primavera e Supercoppa Primavera (le competizioni "primavera" riguardano le squadre giovanili ovvero formate da ragazzi di massimo 19 anni).</p>
+  <p class="contenuto"><i class="fas fa-hand-point-right"></i><a class="didascalia" href="https://www.legaseriea.it/it/lega-calcio/storia" target="_blank" title="Il sito ufficiale della Lega Serie A">Sito ufficiale Lega Serie A</a>
+</p>
+
+<a name="aia"></a><h6>AIA</h6> 
+
+  <div class="image"><img id="imglogo" src="img/AIA.png" width="129,7" height="130" alt="Logo AIA"></div>
+  <p class="contenuto">L’ AIA, Associazione Italiana Arbitri, si occupa della gestione degli arbitri di calcio italiani, dal reclutamento alla designazione (quindi la scelta) degli <a href="#ufficiali" class="linkparole" title="clicca per scoprire di più sugli ufficiali di gara">ufficiali di gara</a> di tutte le gare dei campionati di calcio. L’AIA è affiliata alla <a href="#figc" class="linkparole" title="clicca per scoprire di più sulla figc">FIGC</a>.</p>
+  <p class="contenuto"><i class="fas fa-hand-point-right"></i><a class="didascalia" href="https://www.aia-figc.it/" target="_blank" title="Il sito ufficiale della AIA">Sito ufficiale AIA</a>
+</p>
+
+<a name="legab"></a><h6>LEGA B</h6>
+  <div class="image"><img id="imglogo" src="img/LegaB.png" width="106,8" height="150" alt="Logo Lega B"></div>
+  <p class="contenuto">La Lega Nazionale Professionisti B (LNPB), abbreviata in "Lega B", è l’organo che gestisce il campionato di <a href="competizioni.html#serieb" target="_blank" class="linkparole" title="clicca per scoprire di più sulla Serie B">Serie B</a>, il Campionato di Primavera 2 e la Supercoppa di Primavera 2. Associa tutte le società che partecipano al campionato di Serie B, affiliate alla <a href="#figc" class="linkparole" title="clicca per scoprire di più sulla figc">FIGC</a>.</p>
+  <p class="contenuto">La Lega B punta molto sul valorizzare il campionato di Serie B in un discorso che è improntato molto sui giovani calciatori e il senso di appartenenza dei tifosi, legati ai “piccoli” club che spesso rappresentano un territorio e una comunità e non sono conosciuti all'estero come i grandi club di Serie A.</p>
+  <p class="contenuto"><i class="fas fa-hand-point-right"></i><a class="didascalia" href="https://www.legab.it/lega-b/" target="_blank" title="Il sito ufficiale della Lega B">Sito ufficiale Lega B</a>
+</p>
+
+<a name="legapro"></a><h6>LEGA PRO</h6>
+  <div class="image"><img id="imglogo" src="img/legapro.png" width="128" height="128" alt="Logo Lega Pro"></div>
+  <p class="contenuto">La Lega Italiana Calcio PROfessionistico (Lega Pro) è la lega che organizza il campionato di <a href="competizioni.html#seriec" target="_blank" class="linkparole" title="clicca per scoprire di più sulla Serie C">Serie C</a>, la <a href="competizioni.html#coppaic" target="_blank" class="linkparole" title="clicca per scoprire di più sulla Coppa Italia di Serie C">Coppa Italia di Serie C</a>, la <a href="competizioni.html#coppaic" target="_blank" class="linkparole" title="clicca per scoprire di più sulla Supercoppa di Serie C">Supercoppa di Serie C</a>.</p>
+  <p class="contenuto"><i class="fas fa-hand-point-right"></i><a class="didascalia" href="https://www.lega-pro.com/storia/" target="_blank" title="Il sito ufficiale della Lega Pro">Sito ufficiale Lega PRO</a>
+</p>
+
+<a name="lnd"></a><h6>LND</h6>
+  <div class="image"><img id="imglogo" src="img/LND.png" width="130" height="137,8" alt="Logo LND"></div>
+  <p class="contenuto">La LND, Lega Nazionale Dilettanti, associa le società e le associazioni sportive affiliate alla <a href="#figc" class="linkparole" title="clicca per scoprire di più sulla figc">FIGC</a> che partecipano a tutti i <a href="competizioni.html#seried" target="_blank" class="linkparole" title="clicca per scoprire di più sui campionati dilettantistici">campionati dilettantistici italiani</a> (cui partecipano esclusivamente calciatori non professionisti), che sono da lei gestiti.</p>
+  <p class="contenuto"><i class="fas fa-hand-point-right"></i><a class="didascalia" href="https://www.lnd.it/it/lega-nazionale-dilettanti" target="_blank" title="Il sito ufficiale della LND">Sito ufficiale LND</a>
+</p>
+
+<a name="internazionali"></a><h6 class="sezione">Internazionali</h6>
+
+<a name="uefa"></a><h6>UEFA</h6>
+
+  <div class="image"><img id="imglogo" src="img/uefa.png" width="130" height="130" alt="Logo UEFA"></div>
+  <p class="contenuto">La UEFA, Union of European Football Associations, è l’organismo di governo del calcio in Europa, la sede è a Nyon (in Svizzera) e comprende le federazioni calcistiche europee (in totale 55). È responsabile di tutto il calcio europeo, compreso quello giovanile, quello femminile e il calcio a 5. È affiliata alla <a href="#fifa" class="linkparole" title="scopri di più sulla fifa">FIFA</a>.</p>
+  <p class="contenuto">Organizza competizioni per le nazionali: <a href="competizioni.html#europei" target="_blank" class="linkparole" title="clicca per scoprire di più sugli europei">Campionato Europeo di calcio</a>, <a href="competizioni.html#nations" target="_blank" class="linkparole" title="clicca per scoprire di più sulla Nations League">Uefa Nations League</a>, <a href="competizioni.html#eurou21" target="_blank" class="linkparole" title="clicca per scoprire di più sugli europei u21">Europeo Under 21</a>, Europeo Under 19, Europeo Under 17, Europeo Femminile, Europeo Femminile Under 19, Europeo Femminile Under 17 ed Europeo di calcio a 5.</p>
+  <p class="contenuto">E anche per club: <a href="competizioni.html#ucl" target="_blank" class="linkparole" title="clicca per scoprire di più sulla Champions League">Uefa Champions League</a>, <a href="competizioni.html#uel" target="_blank" class="linkparole" title="clicca per scoprire di più sull'Europa League">Uefa Europa league</a>, <a href="competizioni.html#supercoppae" target="_blank" class="linkparole" title="clicca per scoprire di più sulla Supercoppa Uefa">Supercoppa Uefa</a>, Coppa Uefa (calcio a 5), Uefa Women’s Champions League, <a href="competizioni.html#uecl" target="_blank" class="linkparole" title="clicca per scoprire di più sulla Conference League">Uefa Europa Conference League</a> (che partirà dalla stagione 2021/2022).</p>
+  <p class="contenuto"><i class="fas fa-hand-point-right"></i><a class="didascalia" href="https://it.uefa.com/insideuefa/about-uefa/" target="_blank" title="Il sito ufficiale della Uefa">Sito ufficiale UEFA</a>
+</p>
+
+<a name="fifa"></a><h6>FIFA</h6>
+
+  <div class="image"><img id="imglogo" src="img/fifa.png" width="200" height="92,9" alt="Logo FIFA"></div>
+  <p class="contenuto">La FIFA, Federation Internationale de Football Association, è la federazione internazionale che governa il calcio, il calcio a 5 e il beach soccer più importante. La sede è a Zurigo (in Svizzera) e si occupa di tutte le manifestazioni intercontinentali.</p>
+  <p class="contenuto">Appartengono alla FIFA confederazioni che sono corrispondenti alle grandi aree del mondo: UEFA (per l'Europa), AFC (per l'Asia), CAF (per l'Africa), CONCACAF (Per il centro e il nord America), CONMEBOL (Per il Sudamerica), OFC (per l'Oceania).</p>
+  <p class="contenuto">Si occupa di organizzare il torneo più importante del calcio ovvero la <a href="competizioni.html#mondiali" target="_blank" class="linkparole" title="clicca per scoprire di più sui mondiali">FIFA World Cup</a> (Coppa del mondo). Inoltre organizza la Women's World Cup e la <a href="competizioni.html#mondialeclub" target="_blank" class="linkparole" title="clicca per scoprire di più sui mondiali per club">Coppa del Mondo per club</a>.</p>
+  <p class="contenuto">La Fifa aggiorna mensilmente una classifica composta dalle <a href="competizioni.html#nazionale" target="_blank" class="linkparole" title="clicca per scoprire di più sulle nazionali">nazionali</a> maschili di tutto il mondo chiamata "Ranking Mondiale Fifa" che è uno strumento per confrontare le nazionali di diverse federazioni e confederazioni.</p>
+  <p class="contenuto"><i class="fas fa-hand-point-right"></i><a class="didascalia" href="https://www.fifa.com/who-we-are/" target="_blank" title="Il sito ufficiale della Fifa">Sito ufficiale FIFA</a>
+</p>
+
+<a name="ifab"></a><h6>IFAB</h6>
+  <div class="image"><img id="imglogo" src="img/ifab.png" width="210" height="47,3" alt="Logo IFAB"></div>
+  <p class="contenuto">L'IFAB, International Football association Board è un organo internazionale, indipendente dalla Fifa, che ha il potere di stabilire le innovazioni e le modifiche delle regole del calcio a tutti i livelli (escludendo solo il calcio amatoriale). È formato da 8 membri (4 designati dalla Fifa e 4 dalle federazioni britanniche FA, FAW, SFA, IFA) e ha potere assoluto sulle regole del calcio in tutti i 5 continenti.</p>
+  <p class="contenuto">Ogni anno i membri si riuniscono nell’incontro generale annuale e, nelle settimane precedenti, le federazioni possono inviare le proposte di modifica (attraverso la federazione che le trasmette alla Fifa, che le fa arrivare all’Ifab). L’IFAB è l’organo che ha redatto e controlla ancora le regole del gioco del calcio.</p>
+  <p class="contenuto"><i class="fas fa-hand-point-right"></i><a class="didascalia" href="https://theifab.com/" target="_blank" title="Il sito ufficiale dell'Ifab'">Sito ufficiale IFAB</a>
+</p>
+</section>
+
+<!--FOOTER-->
+<footer>
+  <div class="col">
+    <div class="row">
+  <form action="documentazione.html"><button type="submit" class="btn btn-primary footer" data-bs-toggle="button" autocomplete="off" id="doc">Il progetto - documentazione</button>
+  </form> 
+  <form action="presentazione.html"><button type="submit" class="btn btn-primary footer" data-bs-toggle="button" autocomplete="off">Chi sono</button>
+</form>
+<a href=""><i class="fab fa-instagram"></i></a>
+</div>
+<div class="row">
+<P class="footer">Tutti i diritti riservati. Tutti i marchi e i nomi menzionati appartengono ai rispettivi proprietari.</P>
+</div>
+</div>
+</footer>
+</body>
+</html>
