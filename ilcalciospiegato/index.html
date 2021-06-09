@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <title>Il Calcio Spiegato</title>
+    <meta charset="utf-8">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!--favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!--per sidebar e icone-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/ae4550f5d7.js" crossorigin="anonymous"></script>
+<!-- FONT -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--BOTTONE TOP-->
+
+<a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+<script type="text/javascript">
+const gotopbtn = document.querySelector(".gotopbtn");
+window.addEventListener("scroll",() =>{
+  if (window.pageYOffset > 100) {
+    gotopbtn.classList.add("active");
+  } else {
+    gotopbtn.classList.remove("active");
+  }
+})
+</script>
+
+  <header>
+    	<h1>il calcio spiegato</h1>
+
+<!-- logo -->
+
+  <div>
+    <a href="index.html">
+      <img src="img/logo.png" width="230" height="135,30" alt="il calcio spiegato" id="logo">
+    </a>
+      <p id="descrizione"> Tutto quello che c'è da sapere sullo sport più amato dagli italiani</p>
+  </div>
+  </header>
+
+<!--sidebar-->
+
+<input type="checkbox" id="check">
+<label for="check">
+<i class="fas fa-bars" id="btn"></i>
+<i class="fas fa-times" id="cancel"></i>
+</label>
+
+  <nav class="sidebar">
+    <h2>Menu <i class="fab fa-elementor"></i></h2>
+    <a class="menu active" id="menu" href="index.html"><i class="fas fa-th-large"></i><span>Home</span></a>
+    <a id="menu" href="basi.html"><i class="far fa-futbol"></i><span>Basi</span></a>
+    <a id="menu" href="competizioni.html"><i class="fas fa-trophy"></i><span>Competizioni</span></a>
+    <a id="menu" href="tattica.html"><i class="far fa-clipboard"></i><span>Tattica</span></a>
+    <a id="menu" href="oltre.html"><i class="fas fa-smile-wink"></i><span id="voce4">Oltre il gioco</span></a>
+  </nav>
+
+<section id="home">
+  <h3 id="benvenuto"><b>Il Calcio Spiegato</b> è il sito che stavi cercando per iniziare a conoscere il calcio!</h3>
+  <p id="grande">Dai un'occhiata ai contenuti più interessanti<i class="fas fa-long-arrow-alt-down"></i></p>
+</section>
+
+<div class="col-md">
+  <div class="row">
+
+    <div class="card"><a href="basi.html#regolamento">
+      <img src="img/imgbasi.png" class="card-img-top" alt="basi del calcio"></a>
+        <div class="card-body">
+          <h4 class="card-title"><a href="basi.html#regolamento">Regolamento</a></h4>
+        <a href="basi.html#regolamento"><p class="card-text">Non sai la differenza tra calcio di rinvio e rimessa laterale? Che cos'è il fuorigioco? Qui le risposte a queste domande e tanto altro.
+        </p></a>
+        </div>
+    </div>
+
+    <div class="card"><a href="tattica.html#linktattica">
+      <img src="img/imgtattica.png" class="card-img-top" alt="tattica"></a>
+        <div class="card-body">
+          <h4 class="card-title"><a href="tattica.html#linktattica">Tattica</a></h4>
+        <a href="tattica.html#linktattica"><p class="card-text">Che differenza c'è tra un centrocampista e un attaccante? Meglio 4-3-3 o 3-5-2? Se vuoi capire di cosa di tratta clicca qui.
+        </p></a>
+        </div>
+    </div>
+
+    <div class="card"><a href="competizioni.html#nazionale">
+      <img src="img/imgnazionale.png" class="card-img-top" alt="Nazionale italiana"></a>
+        <div class="card-body">
+          <h4 class="card-title"><a href="competizioni.html#nazionale">Nazionale</a></h4>
+          <a href="competizioni.html#nazionale"><p class="card-text">Quando gioca la nazionale tutti non parlano d'altro...e tu, sai come funziona? Dopo che avrai cliccato qui non avrai più nessun dubbio.
+        </p></a>
+        </div>
+    </div>
+
+    <div class="card"><a href="competizioni.html#linkcompetizioni">
+      <img src="img/imgcompetizioni.png" class="card-img-top" alt="Competizioni"></a>
+        <div class="card-body">
+          <h4 class="card-title"><a href="competizioni.html#linkcompetizioni">Competizioni</a></h4>
+          <a href="competizioni.html#linkcompetizioni"><p class="card-text">Come funziona un campionato? E la Champions? Se fanno 4 gol prendono 4 punti? Qui le risposte a queste e altre domande.
+        </p></a>
+        </div>
+    </div>
+
+    <div class="card"><a href="oltre.html#calciotv">
+      <img src="img/imgcalciointv.png" class="card-img-top" alt"Calcio in Tv"></a>
+        <div class="card-body">
+          <h4 class="card-title"><a href="oltre.html#calciotv">Calcio in tv</a></h4>
+          <a href="oltre.html#calciotv"><p class="card-text">Quanto è importante la tv per il calcio e il calcio per la tv? 
+        </p></a>
+        </div>
+    </div>
+
+    <div class="card"><a href="competizioni.html#seriea">
+      <img src="img/imgseriea.png" class="card-img-top" alt="Serie A"></a>
+        <div class="card-body">
+          <h4 class="card-title"><a href="competizioni.html#seriea">Serie A</a></h4>
+          <a href="competizioni.html#seriea"><p class="card-text">Ma quanto dura il campionato? Le partite ci sono tutti i weekend? Cos'è lo scudetto? Come si vince? Per le tue domande sulla Serie A clicca qui.
+          </p></a>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!--FOOTER-->
+<footer>
+  <div class="col">
+    <div class="row">
+  <form action="documentazione.html"><button type="submit" class="btn btn-primary footer" data-bs-toggle="button" autocomplete="off" id="doc">Il progetto - documentazione</button>
+  </form> 
+  <form action="presentazione.html"><button type="submit" class="btn btn-primary footer" data-bs-toggle="button" autocomplete="off">Chi sono</button>
+</form>
+<a href=""><i class="fab fa-instagram"></i></a>
+</div>
+<div class="row">
+<P class="footer">Tutti i diritti riservati. Tutti i marchi e i nomi menzionati appartengono ai rispettivi proprietari.</P>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

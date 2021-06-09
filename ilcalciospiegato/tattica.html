@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <title>Il Calcio Spiegato</title>
+    <meta charset="utf-8">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!--favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!--per sidebar e icone-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/ae4550f5d7.js" crossorigin="anonymous"></script>
+<!-- FONT -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+
+  <!--BOTTONE TOP-->
+<a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+<script type="text/javascript">
+const gotopbtn = document.querySelector(".gotopbtn");
+window.addEventListener("scroll",() =>{
+  if (window.pageYOffset > 100) {
+    gotopbtn.classList.add("active");
+  } else {
+    gotopbtn.classList.remove("active");
+  }
+})
+</script>
+
+  <header>
+      <h1>Tattica</h1>
+<!-- logo -->
+  <div>
+    <a href="index.html">
+      <img src="img/logo.png" width="230" height="135,30" alt="il calcio spiegato" id="logo">
+    </a>
+      <p id="descrizione"> Tutto quello che c'è da sapere sullo sport più amato dagli italiani</p>
+  </div>
+  </header>
+  
+<!--briciole di pane-->
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Tattica</li>
+  </ol>
+</nav>
+
+
+<!--sidebar-->
+<input type="checkbox" id="check">
+<label for="check">
+<i class="fas fa-bars" id="btn"></i>
+<i class="fas fa-times" id="cancel"></i>
+</label>
+<nav class="sidebar">
+  <h2>Menu <i class="fab fa-elementor"></i></h2>
+  <a id="menu" href="index.html"><i class="fas fa-th-large"></i><span>Home</span></a>
+  <a id="menu" href="basi.html"><i class="far fa-futbol"></i><span>Basi</span></a>
+  <a id="menu" href="competizioni.html"><i class="fas fa-trophy"></i><span>Competizioni</span></a>
+  <a id="menu" class="menu active" href="tattica.html"><i class="far fa-clipboard"></i><span>Tattica</span></a>
+  <a id="menu" href="oltre.html"><i class="fas fa-smile-wink"></i><span id="voce4">Oltre il gioco</span></a>
+</nav>
+
+<!--intro-->
+<section id="interne">
+  <a name="linktattica"></a><p id="grande">Clicca direttamente sulla sezione che ti interessa o scorri per non perderti nulla</p>
+</section>
+<div class="container">
+  <div class="row" id="areabottoni">
+  <div class="col">
+    <form action="#ruoli">
+      <button type="submit" class="btn btn-primary contenuti" data-bs-toggle="button" autocomplete="off">Ruoli</button>
+    </form>
+    </div>
+  <div class="col">
+    <form action="#moduli">
+      <button type="submit" class="btn btn-primary contenuti" data-bs-toggle="button" autocomplete="off">Moduli</button>
+    </form>
+    </div>
+  <div class="col">
+    <form action="#tattiche">
+      <button type="submit" class="btn btn-primary contenuti" data-bs-toggle="button" autocomplete="off">Tattiche</button>
+    </form>
+    </div>
+  <div class="col">
+    <form action="#fondamentali">
+      <button type="submit" class="btn btn-primary contenuti" data-bs-toggle="button" autocomplete="off">I fondamentali</button>
+    </form>
+    </div>
+  </div>
+</div>
+
+<!--contenuti-->
+<section>
+<a name="ruoli"></a><h5 class="sticky-top">Ruoli</h5>
+
+<div class="indice">
+  <P>In questa sezione:</P>
+  <ul class="listaprincipale">
+    <li><a href="#portiere">Portiere</a></li>
+    <li class="elementoprincipale"><a href="#giocatorimovimento">Giocatori di movimento</a></li>
+      <ul>
+        <li><a  class="elementosecondario" href="#difensori">Difensori</a></li>
+        <li><a href="#difcentrale">- Difensore centrale </a></li>
+        <li><a href="#terzino">- Terzino</a></li>
+      </ul>
+      <ul>
+        <li><a class="elementosecondario"href="#centrocampisti">Centrocampisti</a></li>
+        <li><a href="#mediano">- Mediano/Centrocampista Difensivo</a></li>
+        <li><a href="#cc">- Centrocampista centrale</a></li>
+        <li><a href="#regista">- Regista</a></li>
+        <li><a href="#cesterno">- Centrocampista esterno/laterale</a></li>
+        <li><a href="#interno">- Interno/mezzala</a></li>
+        <li><a href="#alac">- Ala</a></li>
+        <li><a href="#trequartista">- Trequartista/fantasista/rifinitore</a></li>
+      </ul>
+      <ul>
+        <li><a class="elementosecondario" href="#attaccanti">Attaccanti</a></li>
+        <li><a href="#punta">- Centravanti/punta</a></li>
+        <li><a href="#seconda">- Seconda Punta</a></li>
+        <li><a href="#mezzapunta">- Mezzapunta/trequartista</a></li>
+        <li><a href="#alaa">- Ala/Esterno</a></li>
+  </ul>
+</div>
+
+  <p class="contenuto" style="margin-top: 3rem;">In una formazione che scende in campo i calciatori non svolgono tutti le stesse funzioni e non hanno le stesse caratteristiche. Viceversa, hanno ognuno un "ruolo" più o meno preciso. C'è chi è più propenso alla fase offensiva (quando la squadra ha la palla e gioca cercando di fare gol) e chi alla fase difensiva (quando la palla ce l'hanno gli avversari e si deve cercare di non subire gol) e una buona squadra deve riuscire a fare bene entrambe le fasi. Per farlo ha bisogno di giocatori che svolgano i ruoli difensivi e di giocatori che svolgano ruoli offensivi.</p>
+  <p class="contenuto">I ruoli si suddividono a partire dal "reparto" di cui fanno parte (difesa, centrocampo o attacco). I giocatori di movimento non sono menzionati nel regolamento mentre il portiere sì (ed è l'unico ruolo "imposto", ci deve essere obbligatoriamente in ogni momento della partita un giocatore che ricopra questo ruolo).
+</p>
+
+<a name="portiere"></a><h6>PORTIERE</h6>
+
+  <p class="contenuto">Lo scopo principale del portiere è difendere la propria porta, per evitare che la palla vi entri, subendo quindi un gol. Da regolamento ci deve essere sempre un giocatore che assume il ruolo di portiere che, in quanto tale, ha delle peculiarità descritte proprio nelle regole del gioco.</p>
+  <p class="contenuto">Ad esempio può toccare il pallone con qualsiasi parte del corpo, comprese le mani, quando è all’interno della sua <a href="campo.html#arigore" target="_blank" class="linkparole" title="area di rigore">area di rigore</a>. Al di fuori dell’area tutte le regole che valgono in modo particolare per il portiere, non sono più applicate e il giocatore deve rispettare le regole previste per tutti i giocatori “di movimento” (gli altri giocatori della squadra). </p>
+  <p class="contenuto">Il portiere deve indossare una divisa diversa dai suoi compagni di squadra in modo che sia evidente chi ricopre quel ruolo. L’abbigliamento tipico del portiere prevede, rispetto agli altri giocatori, un paio di guanti che aiutano ad avere una presa migliore del pallone. Quando il portiere intercetta un tiro impedendo che questo finisca in rete si dice che ha fatto una “parata”. Il portiere può commettere delle infrazioni particolari che sono punibili con il calcio di punizione indiretto (ad esempio non può tenere il pallone in mano per più di 6 secondi).</p>
+  <p class="contenuto">Il portiere può, nella sua area, anche commettere falli che portano all’assegnazione di un calcio di rigore. Se il portiere si infortuna, il gioco viene interrotto immediatamente per permettere le cure (cosa che non succede sempre con i calciatori di movimento). Il portiere non può essere ostacolato nel momento in cui cerca di rinviare il pallone e non si può limitare il movimento del portiere ostacolandolo con il proprio corpo.</p>
+  <p class="contenuto">Oltre alle parate "in tuffo" (dove comunque occorre un certo grado di tecnica e agilità), il portiere ha il compito di sistemare la barriera per i <a href="basi.html#punizioni" target="_blank" class="linkparole" title="clicca per scoprire di più sulle punizioni">calci di punizione</a> contro, di sventare i tentativi degli avversari di fare gol con “uscite alte” (il portiere salta più in alto di tutti e raccoglie il pallone tra le sue braccia) e deve avere un buon tempismo per chiudere “lo specchio della porta” all’attaccante avversario (deve fare in modo che il giocatore avversario non abbia una traiettoria possibile da dare al pallone perché finisca in rete).</p>
+  <p class="contenuto">Le parate possono essere effettuate con una presa (il portiere trattiene il pallone bloccandolo), o con una respinta (allontanando il pallone dalla porta, meglio se lontano dagli avversari). Dopo che il portiere blocca il pallone può far riprendere il gioco con un rilancio sia con le mani che con i piedi.</p>
+  <p class="contenuto">Il portiere è molto importante per guidare la difesa; parlando con i suoi compagni durante la partita, essendo in una posizione in cui può vedere nel complesso il campo e i giocatori, può aiutare i compagni a coordinare meglio i loro movimenti, oltre che a dare sicurezza alla sua squadra. In più, nel calcio moderno, il portiere è sempre più un giocatore che deve saper “impostare” il gioco e avere quindi una discreta tecnica anche con i piedi per giocare il pallone con i compagni.</p>
+  <p class="contenuto">Il portiere si incarica il più delle volte dei <a href="basi.html#rinvio" target="_blank" class="linkparole" title="clicca per scoprire di più sul rinvio">calci di rinvio</a> dopo che la palla è stata buttata fuori dalla <a href="campo.html#lporta" target="_blank" class="linkparole" title="clicca per scoprire di più sulle punizioni">linea di porta</a> dagli avversari.</p> 
+  <p class="contenuto">Il portiere è un ruolo molto particolare e ben definito. Deve tenere sempre la concentrazione al massimo perché un suo errore può essere fatale per l’esito della gara. Nello staff delle squadre ci sono allenatori dedicati ai portieri della rosa. I portieri, quindi, eseguono un allenamento specifico, in alcune parti diverso da quello dei giocatori di movimento.
+</p>
+
+<a name="giocatorimovimento"></a><h6 class="sezione">Giocatori di Movimento</h6>
+
+  <p class="contenuto">I ruoli specifici dei giocatori, ecluso il portiere, non vengono menzionati nel regolamento e sono per lo più indicativi delle caratteristiche che i componenti della squadra devono avere.</p>
+
+<a name="difensori"></a><h6>DIFENSORI</h6>  
+  <p class="contenuto">I difensori, insieme al <a href="#portiere" class="linkparole" title="clicca per scoprire di più sul portiere">portiere</a>, costituiscono il reparto della "difesa". Sono quei giocatori che formano la "linea difensiva" e sono i giocatori che stanno solitamente più vicini al portiere (detto anche “estremo difensore”). I difensori devono far in modo di neutralizzare le minacce alla propria area di rigore, contrastando i tentativi degli avversari di fare gol.</p>
+  <p class="contenuto">I difensori possono essere suddivisi ulteriormente in altri ruoli più specifici:
+</p>
+
+<a name="difcentrale"></a><p class="titolo">DIFENSORE CENTRALE</p>
+  <p class="contenuto">Il difensore centrale è il giocatore che occupa, nella linea difensiva, la zona centrale del campo (sono solitamente 2 nella difesa a 4 e 3 nella difesa a 3). Hanno il compito di impedire all’attaccante di superarlo e andare a tentare la rete, quindi deve avere importanti doti fisiche per contrastare l’avversario che, nella maggior parte dei casi, è l’<a href="#punta" class="linkparole" title="clicca per scoprire di più sull'attaccante centrale">attaccante centrale</a> che a sua volta ha un fisico importante.</p>
+  <p class="contenuto">In più il difensore centrale oggi, deve guidare la propria difesa (ad esempio farla salire per mandare gli avversari in <a href="basi.html#fuorigioco" class="linkparole" target="_blank" title="clicca per scoprire di più sul fuorigioco">fuorigioco</a>) e spesso essere il punto di connessione tra difesa e centrocampo.</p>    
+        
+<a name="terzino"></a><p class="titolo">TERZINO</p>
+  <p class="contenuto">Il terzino, detto anche "laterale" o "esterno", è un giocatore che in campo si posiziona nella zona destra (terzino destro) o nella zona sinistra (terzino sinistro); perciò solitamente i terzini sono 2, uno sinistro e uno destro (sono impiegati specialmente nei moduli con difesa a 4).</p>
+  <p class="contenuto">Durante la fase offensiva della propria squadra, questo giocatore spesso aiuta i propri compagni dando sostegno sulla propria "fascia" di campo con sovrapposizioni (il giocatore passa da dietro ad avanti al suo compagno che ha il possesso palla per farsela passare) e cross.</p>
+  <p class="contenuto">Il "terzino fluidificante" è un terzino particolarmente adatto a costruire il gioco, che opera sulla sua fascia, con la capacità di "saltare l’uomo" (superare l'avversario senza che gli venga rubata la palla) e andare al cross per i compagni o tiri da lontano. Quindi oltre alla fase difensiva, si occupa molto anche della fase offensiva della squadra e può essere determinante nel fare gol.
+</p>   
+
+<a name="centrocampisti"></a><h6>CENTROCAMPISTI</h6>
+
+  <p class="contenuto">I centrocampisti si posizionano tendenzialmente della zona davanti alla difesa e dietro gli attaccanti. I centrocampisti devono aiutare la difesa nel recuperare palloni (riprenderne il possesso dagli avversari) e aiutare in fase offensiva facendo passaggi, assist per gli attaccanti ma a volte anche tiri dalla distanza per tentare di fare gol.</p>
+  <p class="contenuto">Esistono più posizioni e quindi ruoli specifici che variano anche a seconda del <a href="#moduli" class="linkparole" title="clicca per scoprire di più sui moduli">modulo</a> e della funzione che svolgono al suo interno:
+</p>
+
+<a name="mediano"></a><p class="titolo">MEDIANO/CENTROCAMPISTA DIFENSIVO</p>
+
+  <p class="contenuto">Il mediano o "centrocampista difensivo" è il centrocampista più arretrato (gioca molto vicino alla difesa), quindi ha delle caratteristiche più difensive che offensive. Il suo compito principale è togliere palla agli avversari e far ripartire invece la propria azione d’attacco. Si posiziona nella zona centrale del campo.
+</p>
+  
+<a name="cc"></a><p class="titolo">CENTROCAMPISTA CENTRALE</p>
+  <p class="contenuto">Il centrocampista centrale è il centrocampista che sta nella zona centrale del campo, deve accompagnare la squadra sia in fase difensiva che offensiva (di impostazione).
+</p>
+
+<a name="regista"></a><p class="titolo">REGISTA</p>
+ 
+  <p class="contenuto">Il regista è il giocatore che, nel ruolo di centrocampista centrale o interno, ha la qualità di organizzare il gioco con intelligenza tattica e visione di gioco, in più solitamente è anche molto preciso nei passaggi che effettua.
+</p>
+
+<a name="cesterno"></a><p class="titolo">CENTROCAMPISTA ESTERNO/LATERALE</p>
+
+  <p class="contenuto">Il centrocampista esterno o laterale come il <a href="#terzino" class="linkparole" title="clicca per scoprire di più sul terzino">terzino</a> (specie quello fluidificante), si occupa delle fasce esterne del campo. Si posiziona però in una zona più avanzata rispetto al terzino (ma più indietro rispetto all’<a href="#alaa" class="linkparole">ala</a>). Questo ruolo prevede la capacità di saltare l’uomo (superare l'avversario senza che gli venga rubata la palla) e effettuare cross per i compagni (effettuare cioè dei lanci che possono diventare degli "assist" ovvero far fare immediatamente gol al compagno).
+</p>
+
+<a name="interno"></a><p class="titolo">INTERNO/MEZZALA</p>
+
+  <p class="contenuto">L'interno o mezzala è il centrocampista che deve collegare difesa e attacco in impostazione, ha qualità offensive e in certi casi può essere considerato "attaccante aggiunto" e quindi segnare numerosi gol. Si dedica maggiormente alla fase di attacco e viene utilizzato spesso nei moduli con centrocampo a 3 (3 centrocampisti).
+</p>
+
+<a name="alac"></a><p class="titolo">ALA</p>
+ 
+  <p class="contenuto">L'ala è un ruolo che va a indicare un giocatore che gioca nella fascia esterna ed è molto offensivo (ha caratteristiche per cui è bravo ad attaccare) e si tratta di un giocatore molto simile a un attaccante. Per distinguerlo dall’ala come ruolo del reparto degli attaccanti si chiama anche “ala tornante”. La sua caratteristica è quella di partire dal centrocampo per le sue azioni di attacco. Il ruolo di ala viene riferito a un centrocampista specialmente nel modulo 4-4-2.
+</p>
+
+<a name="trequartista"></a><p class="titolo">TREQUARTISTA/FANTASISTA/RIFINITORE</p>
+
+  <p class="contenuto">Il trequartista o fantasista è un giocatore che si posiziona nella zona della trequarti campo (tra i centrocampisti e gli attaccanti, a ridosso dell’area di rigore avversaria). Le sue qualità sono di solito l’intelligenza tattica, la tecnica, l’abilità nel battere i calci piazzati (<a href="basi.html#punizioni" target="_blank" class="linkparole" title="clicca per scoprire di più sulle punizioni">punizioni</a> e <a href="basi.html#angolo" target="_blank" class="linkparole" title="clicca per scoprire di più sul calcio d'angolo">calci d'angolo</a>). Gioca alle spalle delle punte (ad esempio è impiegato nel modulo 3-4-1-2). Questo ruolo può essere considerato parte dei centrocampisti, ma anche degli attaccanti.
+</p>
+
+<a name="attaccanti"></a><h6>ATTACCANTI</h6>
+
+  <p class="contenuto">Gli attaccanti sono i giocatori che giocano in posizione più avanzata e il loro obiettivo è superare la difesa avversaria per fare gol. L’attaccante deve quindi saper finalizzare (finire l'azione con un tiro in porta) e deve saper tirare i vari modi (di punta, di piatto, al volo, rasoterra, d’esterno, di testa, in rovesciata...), più modi diversi di segnare ha e più sarà considerato un attaccante forte e completo.</p>
+  <p class="contenuto">Esistono vari tipi di attaccante:</p>
+
+<a name="punta"></a><p class="titolo">CENTRAVANTI/PUNTA</p>
+
+  <p class="contenuto">Il centravanti (chiamato anche prima punta o punta centrale) è il giocatore dal quale più di tutti ci si aspetta che faccia gol, è il terminale d’attacco (il giocatore più avanzato). Deve essere forte fisicamente per vincere i duelli con i <a href="#difcentrale" class="linkparole" title="clicca per scoprire di più sul difensore centrale">difensori centrali</a> avversari che sono anch’essi forti fisicamente. Spesso la caratteristica che deve avere è il colpo di testa, sia per fare gol che per dare la palla ai compagni, e deve allenarsi a combattere con la difesa avversaria.
+</p> 
+
+<a name="seconda"></a><p class="titolo">SECONDA PUNTA</p>
+
+  <p class="contenuto">La seconda punta è un ruolo che svolge l’attaccante che supporta il centravanti (prima punta), può stargli sia affianco (ad esempio nel modulo 4-4-2) che leggermente dietro (ad esempio nel 4-4-1-1). Solitamente è un giocatore molto veloce con grande tecnica. Anche lui deve cercare di fare gol, ma molto spesso fornisce degli assist (i passaggi al giocatore che segnerà) alla prima punta che si occupa di segnare.
+</p>
+
+<a name="mezzapunta"></a><p class="titolo">MEZZAPUNTA/TREQUARTISTA</p>
+
+  <p class="contenuto">La mezzapunta o trequartista è il giocatore che sta a metà tra il centrocampo e l’attacco (per questo può essere considerato anche un centrocampista molto offensivo), si occupa di mettere in condizione i compagni di segnare ma può anche avere buone capacità realizzative (fa lui stesso dei gol).
+</p>
+
+<a name="alaa"></a><p class="titolo">ALA/ESTERNO</p>
+
+  <p class="contenuto">L'ala o attaccante esterno (può essere "destro" o "sinistro"/ "ala destra" o "ala sinistra" in base al lato del campo in cui gioca maggiormente) è bravo nel partire dalle fasce e può sia mettere dei cross (passaggi in zona vicina alla porta per permettere al compagno di segnare) per i compagni o accentrarsi (partire dal lato e spostarsi con la palla verso il centro per provare a tirare in porta). Deve avere buone qualità di <a href="#dribbling" class="linkparole" title="clicca per scoprire di più sul dribbling">dribbling</a> e di velocità. Questo ruolo può essere svolto a seconda dei casi e dei moduli sia da giocatori considerati attaccanti che da centrocampisti offensivi.
+</p>
+
+</section>
+
+<section>
+
+<a name="moduli"></a><h5 class="sticky-top">Moduli</h5>
+
+<div class="indice">
+  <P>In questa sezione:</P>
+  <ul class="listaprincipale">
+    <li class="elementoprincipale"><a href="#difesa3">Difesa a 3</a></li>
+      <ul>
+        <li><a href="#343">- 3-4-3</a></li>
+        <li><a href="#352">- 3-5-2</a></li>
+        <li><a href="#3412">- 3-4-1-2</a></li>
+        <li><a href="#3421">- 3-4-2-1</a></li>
+      </ul>
+    <li class="elementoprincipale"><a href="#difesa4">Difesa a 4</a></li>
+      <ul>
+        <li><a href="#433">- 4-3-3</a></li>
+        <li><a href="#442">- 4-4-2</a></li>
+        <li><a href="#424">- 4-2-4</a></li>
+        <li><a href="#4312">- 4-3-1-2</a></li>
+        <li><a href="#4231">- 4-2-3-1</a></li>
+        <li><a href="#4141">- 4-1-4-1</a></li>
+        <li><a href="#4321">- 4-3-2-1</a></li>
+      </ul>
+    <li class="elementoprincipale"><a href="#difesa5">Difesa a 5</a></li>
+      <ul>
+        <li><a href="#532">- 5-3-2</a></li>
+      </ul>
+  </ul>
+</div>
+
+<p class="contenuto" style="margin-top: 3rem;">Prima di tutto bisogna chirire il significato di "modulo". Molto spesso viene usato come sinonimo di "sistema di gioco", in realtà il sistema di gioco è il posizionamento dei giocatori sul campo in fase di non possesso (quando non hanno la palla), particolarmente visibile prima del calcio d'inizio. Il modulo è invece la realizzazione del sistema di gioco quindi ciò che i giocatori in campo devono fare a partire dal sistema di gioco. Il significato è comunque molto simile.</p>
+  <p class="contenuto">Un altro termine utilizzato qundo si parla di tattica è lo "schema di gioco", con questo ci si riferisce alla strategia che si può adottare in particolari situazioni, in fase di attacco, per cercare di sorprendere l'avversario e arrivare al gol.</p>
+  <p class="contenuto">Durante la fase di possesso i giocatori spesso cambiano certe posizioni andando a sviluppare il gioco in maniera diversa dalla fase difensiva quindi a formare un altro tipo di modulo (i giocatori devono essere bravi a cambiare velocemente le posizioni quando si passa da una fase all’altra).</p>
+  <p class="contenuto">Il sistema deve essere in grado di dare equilibrio alla squadra per essere pronta sia in fase offensiva che difensiva. Molte squadre cercano di adattare il proprio sistema di gioco in base all’avversario che hanno di fronte così da metterlo più in difficoltà. Comunque solitamente una squadra ha un modulo di riferimento che utilizza più degli altri e che dà l’identità alla squadra di quella stagione o dell’allenatore in carica.</p>
+  <p class="contenuto">L’<a href="basi.html#allenatore" target="_blank" class="linkparole" title="clicca per scoprire di più sull'allenatore">allenatore</a> sceglie il modulo di gioco tenendo conto delle caratteristiche dei giocatori a disposizione e della sua "idea di gioco" (come, secondo lui, il gioco dovrebbe essere per vincere). I moduli sono indicati da numeri in sequenza che rappresentano la disposizione iniziale dei giocatori a partire dai difensori fino agli attaccanti (i portieri non sono inclusi nel nominare i moduli semplicemente perché è un ruolo statico ed è sempre uno)</p>
+  <p class="contenuto">Durante la partita il modulo può essere cambiato in base alle esigenze/circostanze che si vengono a creare durante il corso della partita (ad esempio l'andamento della gara o l'espulsione di un giocatore). I moduli si classificano in base al numero di giocatori in difesa (difesa a 3, a 4 o a 5) perché la difesa è il primo reparto che si cita e quello che caratterizza di più un modulo.</p>
+  <p class="contenuto">Gli schieramenti/sistemi di gioco/moduli sono sempre più flessibili nel calcio moderno, occorre che le squadre si adattino alle varie situazioni e agli avversari. Infatti dai moduli a tre linee si è passato sempre più a moduli a quattro linee che non sono altro che derivazioni ed evoluzioni dei moduli a tre linee molto usati in passato (ad esempio dal 3-4-3 al 3-4-2-1 e al 3-4-1-2).</p>
+  <p class="contenuto">È l’allenatore a dare le indicazioni ai giocatori e molte volte si parla non più del modulo ma di un "modo di giocare", l’interpretazione che i vari allenatori hanno dato a quei sistemi di gioco iniziali. Per questo motivo si sente parlare di "Sarrismo" (dall’allenatore Maurizio Sarri), "Cholismo" (dall’allenatore Diego Simeone – "Il cholo"), "Guardiolismo" (dall’allenatore Josep "Pep" Guardiola) ecc.</p>
+  <p class="contenuto">[Le descrizioni che seguono contengono delle informazioni basilari e non pretendono di essere esaustive o troppo tecniche, sono semplicemente spunti per poi approfondire altrove.]</p>
+
+<a name="difesa3"></a><h6 class="sezione">Difesa a 3</h6>
+
+  <p class="contenuto">I moduli più usati con la difesa a 3 sono:</p>
+
+<a name="343"></a><h6 class="moduli">3-4-3</h6>
+
+  <img src="img/343.png" class="modulo" alt="modulo 3-4-3">
+  <p class="contenuto">Tre <a href="#difcentrale" target="_blank" class="linkparole" title="difensore centrale">difensori centrali</a>, quattro centrocampisti (due <a href="#cc" target="_blank" class="linkparole" title="centrocampista cantrale">centrali</a> e due <a href="#cesterno" target="_blank" class="linkparole" title="centrocampista laterale">esterni</a>) e tre attaccanti (un <a href="#punta" target="_blank" class="linkparole" title="centravanti">centrale</a> e due <a href="#alaa" target="_blank" class="linkparole" title="ala">ali</a>). Gli esterni di centrocampo molte volte arretrano in fase difensiva quasi a formare una difesa a 5.
+</p>
+
+<a name="352"></a><h6 class="moduli">3-5-2</h6>
+
+  <img src="img/352.png" class="modulo" alt="modulo 3-5-2">
+  <p class="contenuto">Tre <a href="#difcentrale" target="_blank" class="linkparole" title="difensore centrale">difensori centrali</a>, cinque centrocampisti (due <a href="#cesterno" target="_blank" class="linkparole" title="esterno">laterali</a>, due <a href="#cc" target="_blank" class="linkparole" title="centrocampista centrale">centrali</a> e un <a href="#mediano" target="_blank" class="linkparole" title="mediano">centrocampista difensivo</a>) e due <a href="#attaccanti" target="_blank" class="linkparole" title="attaccanti">attaccanti</a> (che solitamente giocano l’uno affianco all’altro e sono 2 punte, a volte può essere un 3-5-1-1 se un attaccante sta in posizione più arretrata rispetto all’altro).</p>
+  <p class="contenuto">I laterali di centrocampo (esterni) sono anche detti in questo modulo i "quinti" di centrocampo e sono i giocatori fondamentali di questo sistema di gioco. È uno schieramento più difensivo che offensivo, tipico del calcio italiano di qualche anno fa, che solitamente usa l’arma del <a href="#contropiede" class="linkparole" title="Scopri di più sul contropiede">contropiede</a>. In fase difensiva si può facilmente trasformare in un 5-3-2.
+</p>
+
+<a name="3412"></a><h6 class="moduli">3-4-1-2</h6>
+
+  <img src="img/3412.png" class="modulo" alt="modulo 3-4-1-2">
+  <p class="contenuto">Tre <a href="#difcentrale" target="_blank" class="linkparole" title="difensore centrale">difensori centrali</a>, quattro centrocampisti (indicativamente due <a href="#cc" target="_blank" class="linkparole" title="centrocampista centrale">centrali</a> e due <a href="#cesterno" target="_blank" class="linkparole" title="centrocampista laterale">esterni</a>, questi ultimi possono arretrare a formare una difesa a 5), un <a href="#trequartista" target="_blank" class="linkparole" title="trequartista">trequartista</a> che sta dietro le <a href="#punta" target="_blank" class="linkparole" title="centravanti">punte</a>, i due attaccanti.</p>
+  <p class="contenuto">Quando la squadra ha il possesso del pallone, i due esterni divengono delle <a href="#alac" target="_blank" class="linkparole" title="ala">ali</a> con il compito di servire il trequartista e le punte.
+</p>
+
+<a name="3421"></a><h6 class="moduli">3-4-2-1</h6>
+
+  <img src="img/3421.png" class="modulo" alt="modulo 3-4-2-1">
+  <p class="contenuto">Tre <a href="#difcentrale" target="_blank" class="linkparole" title="difensore centrale">difensori centrali</a>, quattro centrocampisti (due <a href="#cc" target="_blank" class="linkparole" title="centrocampista centrale">centrali</a> e due <a href="#cesterno" target="_blank" class="linkparole" title="centrocampista laterale">esterni</a>), due <a href="#mezzapunta" target="_blank" class="linkparole" title="trequartista">mezzepunte</a> e un attaccante (<a href="#punta" target="_blank" class="linkparole" title="centravanti">prima punta</a>). In fase difensiva si può trasformare in un 5-4-1 con i laterali (esterni) che arretrano in difesa e i trequartisti (mezzepunte) che arretrano a centrocampo. In fase di attacco i trequartisti possono far diventare il modulo un 3-4-3 o un 3-4-1-2.
+</p>
+
+<a name="difesa4"></a><h6 class="sezione">Difesa a 4</h6>
+
+  <p class="contenuto">I moduli più usati con la difesa a 4 sono:</p>
+
+<a name="433"></a><a name=""></a><h6 class="moduli">4-3-3</h6>
+
+  <img src="img/433.png" class="modulo" alt="modulo 4-3-3">
+  <p class="contenuto">Quattro difensori (due <a href="#difcentrale" target="_blank" class="linkparole" title="difensore centrale">centrali</a> e due <a href="#terzino" target="_blank" class="linkparole" title="terzino">terzini</a>), tre centrocampisti (un <a href="#regista" target="_blank" class="linkparole" title="regista">regista</a> e due <a href="#mediano" target="_blank" class="linkparole" title="centrocampista difensivo">mediani</a> o <a href="#interno" target="_blank" class="linkparole" title="mezzala">interni</a> o <a href="#cc" target="_blank" class="linkparole" title="centrocampista centrale">centrali</a>), tre attaccanti (due <a href="#alaa" target="_blank" class="linkparole" title="ala">esterni</a> e una <a href="#punta" target="_blank" class="linkparole" title="centravanti">punta</a>).</p>
+  <p class="contenuto">Discende dal 4-2-4 degli anni 50, è un modulo abbastanza equilibrato. È stato il modulo più diffuso degli anni 2010.
+</p>
+
+<a name="442"></a><h6 class="moduli">4-4-2</h6>
+  <img src="img/442.png" class="modulo" alt="modulo 4-4-2">
+  <p class="contenuto">Quattro difensori (due <a href="#difcentrale" target="_blank" class="linkparole" title="difensore centrale">centrali</a> e due <a href="#terzino" target="_blank" class="linkparole" title="terzino">terzini</a>), quattro centrocampisti (due <a href="#cc" target="_blank" class="linkparole" title="centrocampista centrale">centrali</a> e due <a href="#alac" target="_blank" class="linkparole" title="ala">ali</a>), due attaccanti (due <a href="#punta" target="_blank" class="linkparole" title="centravanti">punte</a>). I terzini in questo modulo devono fare le sovrapposizioni (correre da dietro a davanti rispetto al compagno che ha il pallone per farselo passare) e proporsi in avanti. Le ali in fase difensiva aiutano con i raddoppi di marcatura (contrastare il giocatore avversario in due).</p>
+  <p class="contenuto">Sono principalmente due le varianti del modulo (detto “in linea”) : con il centrocampo “a rombo” (ovvero il 4-3-1-2) e il 4-4-1-1 quando le punte non sono affiancate ma una è più arretrata (seconda punta).
+</p>
+
+<a name="424"></a><h6 class="moduli">4-2-4</h6>
+
+  <img src="img/424.png" class="modulo" alt="modulo 4-2-4">
+  <p class="contenuto">Quattro difensori (due <a href="#difcentrale" target="_blank" class="linkparole" title="difensore centrale">centrali</a> e due <a href="#terzino" target="_blank" class="linkparole" title="terzino">terzini</a>), due centrocampisti e quattro attaccanti (due <a href="#punta" target="_blank" class="linkparole" title="punta">centravanti</a> e due <a href="#alaa" target="_blank" class="linkparole" title="ala">ali</a>). Tipico del calcio sudamericano degli anni 50, non più molto usato oggi.
+</p>
+
+<a name="4312"></a><h6 class="moduli">4-3-1-2</h6>
+
+  <img src="img/4312.png" class="modulo" alt="modulo 4-3-1-2">
+  <p class="contenuto">Quattro difensori (due <a href="#difcentrale" target="_blank" class="linkparole" title="difensore centrale">centrali</a> e due <a href="#terzino" target="_blank" class="linkparole" title="terzino">terzini</a>), tre centrocampisti (un <a href="#regista" target="_blank" class="linkparole" title="regista">regista</a> e due <a href="#interno" target="_blank" class="linkparole" title="interno">mezzali</a>), un <a href="#trequartista" target="_blank" class="linkparole" title="trequartista">trequartista</a> e due attaccanti (due <a href="#punta" target="_blank" class="linkparole" title="centravanti">punte</a>).</p>
+  <p class="contenuto">Deriva dal 4-4-2. Rispetto a questo sistema però, gli esterni di centrocampo sono disposti più nel ruolo di mezzali. Regista e trequartista sono chiamati anche rispettivamente vertice basso e vertice alto. È un modulo abbastanza offensivo che è esposto a subire <a href="#contropiede" class="linkparole" title="Scopri di più sul contropiede">contropiedi</a>.
+</p>
+
+<a name="4231"></a><h6 class="moduli">4-2-3-1</h6>
+
+  <img src="img/4231.png" class="modulo" alt="modulo 4-2-3-1">
+  <p class="contenuto">Quattro difensori (due <a href="#difcentrale" target="_blank" class="linkparole" title="difensore centrale">centrali</a> e due <a href="#terzino" target="_blank" class="linkparole" title="terzino">terzini</a>), due <a href="#mediano" target="_blank" class="linkparole" title="mediano">centrocampisti difensivi</a>, tre centrocampisti offensivi (<a href="#interno" target="_blank" class="linkparole" title="interno">mezzali</a> o <a href="#trequartista" target="_blank" class="linkparole" title="trequartista">trequartisti</a>) e un attaccante (<a href="#punta" target="_blank" class="linkparole" title="punta">centravanti</a>).</p>
+  <p class="contenuto">È un modulo adattabile alle varie situazioni di gioco. I due centrocampisti arretrati sono i mediani e collaborano sia con gli altri centrocampisti che con la difesa. Dei centrocampisti offensivi il centrale fa il trequartista e gli altri due sono gli esterni/ali. Si può trasformare in un 4-5-1 (i mediani avanzano) o in un 4-3-3 (il trequartista arretra e gli esterni avanzano).
+</p>
+
+<a name="4141"></a><h6 class="moduli">4-1-4-1</h6>
+
+  <img src="img/4141.png" class="modulo" alt="modulo 4-1-4-1">
+  <p class="contenuto">Quattro difensori (due <a href="#difcentrale" target="_blank" class="linkparole" title="difensore centrale">centrali</a> e due <a href="#terzino" target="_blank" class="linkparole" title="terzino">terzini</a>), un centrocampista (solitamente un <a href="#mediano" target="_blank" class="linkparole" title="centrocampista difensivo">mediano</a>), quattro <a href="#trequartista" target="_blank" class="linkparole" title="trequartista">trequartisti</a> e una <a href="#punta" target="_blank" class="linkparole" title="centravanti">punta</a>. È un modulo molto offensivo. In fase difensiva può trasformarsi in un 4-5-1. L’attaccante deve saper alzare il baricentro della squadra. Comunque non è un modulo molto usato.
+</p>
+
+<a name="4321"></a><h6 class="moduli">4-3-2-1</h6>
+
+  <img src="img/4321.png" class="modulo" alt="modulo 4-3-2-1">
+  <p class="contenuto">Quattro difensori (due <a href="#difcentrale" target="_blank" class="linkparole" title="difensore centrale">centrali</a> e due <a href="#terzino" target="_blank" class="linkparole" title="terzino">terzini</a>), tre centrocampisti centrali (solitamente un <a href="#regista" target="_blank" class="linkparole" title="regista">regista</a> e due <a href="#interno" target="_blank" class="linkparole" title="mezzala">interni</a>), due <a href="#trequartista" target="_blank" class="linkparole" title="trequartista">trequartisti</a>, un attaccante (<a href="#punta" target="_blank" class="linkparole" title="punta">centravanti</a>). È spesso chiamato “ad albero di natale” per la forma che ricorda.
+</p>
+
+<a name="difesa5"></a><h6 class="sezione">Difesa a 5</h6>
+
+  <p class="contenuto">I moduli con 5 difensori sono meno utilizzati perché molto difensivi. Spesso sono utilizzati nelle fasi finali di una gara per difendere il risultato fin lì ottenuto (anziché attaccare ancora). Il più usato è il 5-3-2.
+</p>
+
+<a name="532"></a><h6 class="moduli">5-3-2</h6>
+
+  <img src="img/532.png" class="modulo" alt="modulo 5-3-2">
+  <p class="contenuto">Cinque difensori (tre <a href="#difcentrale" target="_blank" class="linkparole" title="difensore centrale">centrali</a> e due esterni bassi/<a href="#alac" target="_blank" class="linkparole" title="ala">ali</a> arretrate), tre <a href="#cc" target="_blank" class="linkparole" title="centrocampista centrale">centrocampisti centrali</a> (di cui un <a href="#regista" target="_blank" class="linkparole" title="regista">regista</a>), due attaccanti.</p>
+  <p class="contenuto">La sua variante più diffusa è il 5-3-1-1 con una <a href="#seconda" target="_blank" class="linkparole" title="seconda punta">seconda punta</a> e una <a href="#punta" target="_blank" class="linkparole" title="centravanti">prima punta</a>. Il difensore più centrale può agire come un centrocampista e organizzare le ripartenze. Una delle armi che si può usare con questo modulo è il <a href="#pressing" target="_blank" class="linkparole" title="Scopri di più sul pressing">pressing</a>.
+</p>
+
+</section>
+
+<section>
+
+<a name="tattiche"></a><h5 class="sticky-top" style="clear:left">Tattiche</h5>
+
+<div class="indice">
+  <P>In questa sezione:</P>
+  <ul class="listaprincipale">
+    <li class="elementoprincipale"><a href="#calciototale">Calcio totale</a></li>
+    <li class="elementoprincipale"><a href="#pressing">Pressing</a></li>
+    <li class="elementoprincipale"><a href="#tfuorigioco">Tattica del fuorigioco</a></li>
+    <li class="elementoprincipale"><a href="#tikitaka">Tiki Taka</a></li>
+    <li class="elementoprincipale"><a href="#falsonueve">Falso nueve</a></li>
+    <li class="elementoprincipale"><a href="#catenaccio">Catenaccio</a></li>
+    <li class="elementoprincipale"><a href="#zonamista">Zona mista</a></li>
+    <li class="elementoprincipale"><a href="#zona">Difesa a zona</a></li>
+    <li class="elementoprincipale"><a href="#uomo">Difesa a uomo</a></li>
+    <li class="elementoprincipale"><a href="#contropiede">Contropiede</a></li>
+    <li class="elementoprincipale"><a href="#costruzione">Costruzione dal basso</a></li>
+    <li class="elementoprincipale"><a href="#fasce">Gioco sulle fasce</a></li>
+    <li class="elementoprincipale"><a href="#melina">Melina</a></li>
+  </ul>
+</div>
+
+  <p class="contenuto" style="margin-top: 3rem;">Le "tattiche" non sono altro che le strategie, atteggiamenti, modi di affrontare l'avversario che una squadra può utilizzare sul campo. Di seguito alcune delle più famose o più spesso citate:
+</p>
+
+<a name="calciototale"></a><h6>CALCIO TOTALE</h6>
+
+  <p class="contenuto">Il calcio totale è l’espressione che indica lo stile di gioco in cui ogni giocatore che si sposta dalla propria posizione viene sostituito da un compagno in modo da mantenere l’organizzazione tattica. Ogni giocatore nel corso della partita può ricoprire qualsiasi ruolo, non ci sono posizioni fisse. È stato il primo schema ad applicare sistematicamente il <a href="#pressing" class="linkparole" title="Scopri di più sul pressing">pressing</a> e il <a href="#tfuorigioco" class="linkparole" title="Scopri di più sulla tattica del fuorigioco">fuorigioco</a>. È uno schema usato molto nel calcio olandese a partire dalla metà degli anni ’60 fino agli anni ’80.
+</p>
+
+<a name="pressing"></a><h6>PRESSING</h6>
+
+  <p class="contenuto">Il pressing è una tattica che prevede, in fase di non possesso, l’aggressione collettiva degli avversari per mettere pressione (come suggerisce il nome) ai giocatori in possesso e togliere spazi per indurli in errore e recuperare così palla. Si distingue in pressing "alto" e "basso" a seconda della zona di campo in cui è eseguito. La squadra avversaria può riuscire ad evitare il pressing se effettua passaggi molto veloci, di prima intenzione (direttamente, con un solo tocco del pallone), che non danno il tempo ai giocatori che pressano di chiudere gli spazi.
+</p>
+
+<a name="tfuorigioco"></a><h6>TATTICA DEL FUORIGIOCO</h6>
+
+  <p class="contenuto">La "trappola" o tattica del fuorigioco è spesso abbinata al pressing e consiste nell’avanzamento della linea difensiva verso il portatore di palla in modo che l’avversario si ritrovi in posizione di <a href="basi.html#fuorigioco" target="_blank" class="linkparole" title="Scopri di più sulla regola del fuorigioco">fuorigioco</a> e quindi interrompere o far diventare meno pericolosa l’azione avversaria. Per attuare al meglio questa tattica, il <a href="#portiere" class="linkparole" title="clicca per scoprire di più sul portiere">portiere</a> deve "uscire dai pali" (allontanarsi dalla propria porta) e diventare quasi un difensore quando la linea difensiva avanza. Se non applicata bene e contro attaccanti molto veloci può essere una tattica rischiosa e far subire un <a href="#contropiede" class="linkparole" title="Scopri di più sul contropiede">contropiede</a>, essendo la squadra sbilanciata in avanti.
+</p>
+
+<a name="tikitaka"></a><h6>TIKI TAKA</h6>
+
+  <p class="contenuto">Il tiki-taka è considerato l’evoluzione latina del <a href="#calciototale" class="linkparole">calcio totale olandese</a>. Si tratta di uno stile di gioco nato e usato principalmente in Spagna negli anni 2000. La caratteristica principale sono i tanti passaggi, solitamente rasoterra e ravvicinati, che vengono svolti in modo da mantenere il possesso palla per la maggior parte della partita. Questo stile di gioco costringe l’avversario a correre a vuoto e a stancarsi.</p>
+  <p class="contenuto">A differenza del calcio totale, nel tiki-taka è la palla a muoversi molto e non i giocatori. I passaggi sono per lo più orizzontali, ci sono poche verticalizzazioni. Sono effettuati con una apparente calma, senza fretta di concludere l’azione e sembrano passaggi inutili ma in realtà mantenendo il possesso si controlla l’avversario, che in questo modo non può giocare. L’azione si va a concludere quando l’avversario, stanco, concede più spazi e quindi c’è più possibilità di fare gol.</p>
+  <p class="contenuto">In questo stile di gioco non c’è un <a href="#punta" class="linkparole" target="_blank" title="Scopri di più sul ruolo di centravanti">centravanti</a> (che potrebbe essere un punto di riferimento per la squadra avversaria). Al suo posto c’è il "falso nueve". Per il tiki-taka occorrono giocatori dotati più di tecnica che di fisicità.</p>
+
+<a name="falsonueve"></a><h6>FALSO NUEVE</h6>
+
+  <p class="contenuto">Giocare con il "falso nueve" significa giocare con un giocatore che ricopre il ruolo che normalmente spetterebbe a un <a href="#punta" target="_blank" class="linkparole" title="clicca per scoprire di più sul cantravanti">centravanti</a> (che tradizionalmente indossa la maglia numero nove) essendo però un giocatore abile sia nella rifinitura che nel finalizzare (andare al tiro in porta). Si tratta di un giocatore più simile a un centrocampista che a un attaccante e favorisce anche l’inserimento dei suoi compagni. Infatti è un ruolo spesso ricoperto da un centrocampista e utilizzarlo è un modo per non dare punti di riferimento alla difesa avversaria.
+</p>
+
+<a name="catenaccio"></a><h6>CATENACCIO</h6>
+
+  <p class="contenuto">Il catenaccio è uno schema tattico usato soprattutto in Italia negli anni dai ’40 ai ’70. È uno schema molto difensivo in cui la cosa di cui ci si preoccupa di più è non prendere gol. Il relativo modulo è l'1-3-3-3 dove si ha molta prudenza e si tende ad attendere l’avversario.</p>
+  <p class="contenuto">I media usano ancora l’espressione "catenaccio e contropiede" per quelle squadre che tatticamente tendono a difendere per tutto il tempo e sfruttare le occasioni di colpire in <a href="#contropiede" class="linkparole" title="clicca per scoprire di più sul contropiede">contropiede</a> che gli avversari gli concedono. La parola "catenaccio" è ormai sinonimo di un atteggiamento ultradifensivo, tipico del calcio italiano del passato, anche se ormai nessuno usa più lo schema del catenaccio vero e proprio.
+</p>
+
+<a name="zonamista"></a><h6>ZONA MISTA</h6>
+
+  <p class="contenuto">La zona mista è chiamata all’estero anche "calcio all’italiana" ed è uno schema tattico usato in Italia dalla seconda metà degli anni ’70 alla prima metà degli anni ’90. Uno degli allenatori più famosi per la zona mista è Trapattoni (che lo ha applicato alla Juventus). È ritenuto un’evoluzione del <a href="#catenaccio" class="linkparole">catenaccio</a>. Si tratta di uno schema che prevede che ogni elemento compia una funzione diversa e il gioco sia molto più fluido rispetto al catenaccio classico.</p>
+
+  <p class="contenuto">C’è un <a href="#terzino" target="_blank" class="linkparole" title="Scopri il ruolo di terzino">terzino fluidificante</a>, mentre gli altri tre difensori applicano sia il <a href="#tfuorigioco" class="linkparole" title="Scopri di più sulla tattica del fuorigioco">fuorigioco</a> che la <a href="#zona" class="linkparole" title="Scopri di più sulla marcatura a zona">marcatura a zona</a>. Il centrocampo non prevede un regista classico ma molto dinamismo con i giocatori che si muovono molto. In attacco si vedono una <a href="#punta" target="_blank" class="linkparole" title="Scopri il ruolo di prima punta">prima punta</a> e una <a href="#seconda" target="_blank" class="linkparole" title="Scopri il ruolo di seconda punta">seconda punta</a> sulla trequarti capace di entrare in <a href="campo.html#arigore" target="_blank" class="linkparole" title="Area di rigore">area di rigore</a>. In origine prevedeva quattro difensori, novità rispetto al passato, anche se simile al futuro 3-5-2. L’interpretazione moderna di questo schema è rappresentata dal modulo <a href="#4231" target="_blank" class="linkparole" title="Modulo 4-2-3-1">4-2-3-1</a>.
+</p>
+
+<a name="zona"></a><h6>DIFESA A ZONA</h6>
+
+  <p class="contenuto">La difesa o marcatura a zona è una delle due principali tattiche difensive del calcio, contrapposta alla marcatura <a href="#uomo" class="linkparole" title="Difesa a uomo">"a uomo"</a>. Ogni giocatore non deve marcare (cercare di non far arrivare la palla all'avversario) un uomo di riferimento, ma deve "controllare" una certa zona di campo. Questa tattica difensiva è improntata alla <a href="#tfuorigioco" class="linkparole" title="Scopri di più sulla tattica del fuorigioco">trappola del fuorigioco</a>. La difesa è detta anche difesa in linea perché i difensori tendono a formare una linea, solitamente si tratta di una difesa a quattro, per mandare in fuorigioco l’attaccante avversario.</p>
+  <p class="contenuto">I <a href="#difcentrale" target="_blank" class="linkparole" title="Scopri di più sul ruolo di difensore centrale">difensori centrali</a> devono saper "leggere" il gioco e anticipare gli avversari mentre i <a href="#terzino" target="_blank" class="linkparole" title="Scopri di più sul ruolo di terzino">terzini</a> devono avere capacità di corsa per realizzare la fase offensiva. Nella difesa a zona il reparto difensivo deve essere collaborativo e coordinato. Tutti i difensori devono muoversi simultaneamente e facendo un lavoro di squadra.</p>
+  <p class="contenuto">Con la difesa a zona si effettua spesso il movimento della "diagonale" dove il terzino si muove per bloccare il portatore di palla sulla fascia e gli altri difensori si dispongono, appunto, in diagonale (con il punto più basso costituito dall’altro terzino che si ritrova più accentrato e vicino alla porta). Questo fa in modo che se il portatore di palla dovesse superare il terzino, troverebbe subito un altro difensore a cercare di impedirgli la giocata e se anche questo dovesse essere saltato ce ne sarebbe un altro ancora da superare.
+</p>
+
+<a name="uomo"></a><h6>DIFESA A UOMO</h6>
+
+  <p class="contenuto">Una delle due principali tattiche difensive del calcio, la marcatura o difesa a uomo è basata sul controllo degli avversari e quindi sull’ostacolare individualmente i giocatori avversari effettuando una marcatura individuale, appunto. Più l’avversario si avvicina alla porta o alla palla, più la marcatura deve essere "stretta" (il giocatore deve andare più vicino all'avversario).</p>
+  <p class="contenuto">Nella difesa a uomo quindi ci sono duelli individuali e il rischio è che se si perde un duello, a causa per esempio di un <a href="#dribbling" class="linkparole" title="Scopri di più sul dribbling">dribbling</a>, spesso l’avversario può diventare estremamente pericoloso. In più la posizione dei difensori dipende dall’avversario e non c’è un’organizzazione ordinata delle posizioni in campo.</p>
+  <p class="contenuto">Ovviamente oggi nel calcio ci sono moltissime varianti che cercano di limitare i difetti delle due tattiche (<a href="#zona" class="linkparole" title="Difesa a zona">"a zona"</a> e "a uomo") perciò vengono applicate tattiche difensive che sono principalmente ibride, né completamente a zona né completamente a uomo.
+</p>
+
+<a name="contropiede"></a><h6>CONTROPIEDE</h6>
+
+  <p class="contenuto">Il contropiede o ripartenza è un’azione che si svolge solitamente dopo un errore in attacco dell’avversario che perde palla ed è sbilanciato nella metà campo avversaria. Così, la squadra che sta difendendo può improvvisamente ripartire e cogliere gli avversari impreparati. Per essere efficace, il contropiede deve essere effettuato in velocità in modo da non permettere all’avversario di riorganizzarsi difensivamente.
+</p>
+
+<a name="costruzione"></a><h6>COSTRUZIONE DAL BASSO</h6>
+
+  <p class="contenuto">L’espressione "costruzione dal basso" è sempre più utilizzata dai media negli ultimi anni. Rappresenta quel modo di giocare iniziando l’azione con il  <a href="#portiere" class="linkparole" target="_blank" title="Scopri di più sul portiere">portiere</a>, coinvolgendo tutti i giocatori con passaggi, spesso rasoterra, che fanno in modo di trovare il gol e la vittoria attraverso un gioco corale, collettivo, di squadra.</p>
+  <p class="contenuto">Il portiere in questo ha un ruolo fondamentale perché deve essere sempre più bravo anche con i piedi per fornire passaggi ragionati ai compagni e non semplici lanci lunghi tirati il più lontano possibile e un po’ "a caso". Più che altro negli ultimi tempi si è aperto un dibattito tra chi si schiera a favore e chi contro la "costruzione dal basso" perché si sono visti diversi errori in fase proprio di costruzione tra il portiere e i difensori che hanno fatto subire gol decisivi, evidenziando i rischi di questo principio.</p>
+  <p class="contenuto">Spesso gli allenatori sostenitori della costruzione dal basso, che sono sempre di più, dichiarano che i rischi e i gol presi per errori di impostazione sono sicuramente molti meno dei benefici che questo principio ha portato durante tutte le partite giocate. Perciò si fa un bilancio in cui i rischi sono molto minori rispetto ai benefici. Si cerca, al posto di buttare via la palla, di rischiare ma con coraggio di coinvolgere tutti gli uomini a disposizione, incluso il portiere.</p>
+  <p class="contenuto">Ovviamente è difficile trovare allenatori o giocatori che applichino a prescindere, a ogni costo e in ogni situazione la costruzione dal basso. In base alle opportunità, anche la squadra che ha questo come principio può effettuare una verticalizzazione immediata o "buttare via" la palla e rinunciare temporaneamente al "bel gioco".</p>
+
+<a name="fasce"></a><h6>GIOCO SULLE FASCE</h6>
+
+  <p class="contenuto">"Giocare sulle fasce" significa improntare la propria partita e il proprio gioco non ad effettuare passaggi centrali e orizzontali al centro del campo ma nel raggiungere il più velocemente possibile i giocatori esterni che si trovano sulle fasce che possono verosimilmente andare sul fondo e mettere dei cross in <a href="campo.html#arigore" target="_blank" class="linkparole" title="area di rigore">area di rigore</a> (passaggi solitamente destinati ai centravanti per colpire di testa e fare gol). 
+</p>
+
+<a name="melina"></a><h6>MELINA</h6>
+
+  <p class="contenuto">Con "melina" si intende la tattica utilizzata per rallentare il ritmo della gara con passaggi al fine di mantenere un possesso palla sterile molto spesso per far terminare la partita non modificando il risultato che si sta ottenendo. Solitamente è una tattica usata negli ultimissimi minuti dalla squadra in vantaggio per evitare di subire gol. È un atteggiamento ostruzionistico.
+</p>
+
+</section>
+
+<section>
+<a name="fondamentali"></a><h5 class="sticky-top">I fondamentali</h5>
+
+<div class="indice">
+  <P>In questa sezione:</P>
+  <ul class="listaprincipale">
+    <li class="elementoprincipale"><a href="#passaggio">Passaggio</a></li>
+    <li class="elementoprincipale"><a href="#dribbling">Dribbling</a></li>
+    <li class="elementoprincipale"><a href="#colpoditesta">Colpo di testa</a></li>
+    <li class="elementoprincipale"><a href="#tiro">Tiro in porta</a></li>
+    <li class="elementoprincipale"><a href="#tiroeffetto">Tiro ad effetto</a></li>
+    <li class="elementoprincipale"><a href="#stop">Stop</a></li>
+  </ul>
+</div>
+
+  <p class="contenuto" style="margin-top: 3rem;">I "fondamentali" sono quelle caratteristiche tecniche che i giocatori devono avere (più o meno sviluppate) per gestire il pallone quando lo hanno tra i piedi e genericamente sono: il passaggio, il dribbling,  il colpo di testa, il tiro, lo stop.</p>
+
+<a name="passaggio"></a><h6>PASSAGGIO</h6>
+
+  <p class="contenuto">Il passaggio, come dice il nome, consiste nel "passare" la palla al compagno con i piedi. Il passaggio può essere fatto impattando la palla con varie parti del piede (il piatto, il collo, l’esterno, il "tacco").
+</p>
+
+<a name="dribbling"></a><h6>DRIBBLING</h6>
+  
+  <p class="contenuto">Il dribbling è il mantenere il controllo del pallone senza farsi portare via la palla dall'avversario e senza farsi fare <a href="basi.html#falli" class="linkparole" target="_blank" title="Scopri di più">fallo</a> (comunque il subire fallo porta a un <a href="basi.html#punizioni" class="linkparole" target="_blank" title="Scopri di più sulle punizioni">calcio di punizione</a> perciò anche il solo tentativo di dribbling può aiutare la squadra).</p>
+ <p class="contenuto">Ci sono diversi modi di eseguire un dribbling:
+</p>
+
+<p class="titolo">ELASTICO</p>
+  <p class="contenuto">L'elastico consiste nel spostare il pallone dall’esterno all’interno del piede.</p>
+
+<p class="titolo">DOPPIO PASSO</p>
+  <p class="contenuto">Il doppio passo consiste nel fare una "finta" simulando un tocco che non c’è muovendo le gambe attorno al pallone.</p>
+
+<p class="titolo">SOMBRERO</p>
+  <p class="contenuto">Il sombrero si effettua toccando il pallone in modo da scavalcare l’avversario (il pallone va sollevato da terra, tracciando una traiettoria simile a quella del sombrero messicano), in questo modo l'avversario vine "saltato". Ovviamente, è riuscito se viene mantenuto il possesso palla.</p>
+
+<p class="titolo">TUNNEL</p>
+  <p class="contenuto">Il tunnel consiste nel far passare il pallone tra le gambe dell’avversario.</p>
+
+<p class="titolo">VERONICA</p>
+  <p class="contenuto">La veronica si effettua portandosi avanti il pallone con un piede e poi con l’altro eseguendo una piroetta.</p>
+
+
+<a name="colpoditesta"></a><h6>COLPO DI TESTA</h6>
+  
+  <p class="contenuto">Il colpo di testa, come dice il nome, è l'impattare la palla con la testa. Si utilizza specialmente la fronte.
+</p>
+
+<a name="tiro"></a><h6>TIRO IN PORTA</h6>
+
+  <p class="contenuto">Per tutti i calciatori, ma soprattutto per <a href="#centrocampisti" class="linkparole" target="_blank" title="Scopri di più sui centrocampisti">centrocampisti</a> e <a href="#attaccanti" class="linkparole" target="_blank" title="Scopri di più sugli attaccanti">attaccanti</a>, è importantissimo saper tirare in porta.</p>
+  <p class="contenuto">Ci sono moltissimi modi per tirare, i principali sono:
+</p>
+
+<p class="titolo">AL VOLO</p>
+  <p class="contenuto">Nel tiro al volo il pallone viene calciato direttamente senza controllarlo (spesso senza fargli nemmeno toccare il terreno).</p>
+
+<p class="titolo">DI CONTROBALZO</p>
+  <p class="contenuto">Il tiro di controbalzo avviene subito dopo che il pallone ha rimbalzato sul terreno.</p>
+
+<p class="titolo">PALLONETTO</p>
+  <p class="contenuto">Nel pallonetto il pallone viene calciato in modo che superi il <a href="#portiere" class="linkparole" target="_blank" title="Scopri di più sul portiere">portiere</a> con una traiettoria prima ascendente poi discendente (soprannominato in alcuni casi anche "cucchiaio" anche se quest’ultimo è più indicato a descrivere lo stesso tipo di tiro viene fatto durante un <a href="basi.html#rigori" class="linkparole" target="_blank" title="Scopri di più sui rigori">tiro di rigore</a>)</p>
+
+<p class="titolo">RABONA</p>
+  <p class="contenuto">La rabona è un modo di calciare il pallone eseguito incrociando le gambe: il piede con cui si calcia va dietro al piede d’appoggio.</p>
+
+<p class="titolo">ROVESCIATA</p>
+  <p class="contenuto">La rovesciata è forse il gesto tecnico più spettacolare e più famoso del calcio. Il giocatore è spalle alla porta e con un salto il pallone viene colpito con il collo del piede (verso la porta alle sue spalle).</p>
+
+<p class="titolo">SCORPIONE</p>
+  <p class="contenuto">Lo scorpione si effettua impattando il pallone con il tacco del piede, da dietro la schiena (ci si lancia in avanti), indirizzando il pallone verso la porta davanti a sé.</p>
+
+<p class="titolo">TAP IN</p>
+  <p class="contenuto">Un "tap-in" consiste semplicemente nello spingere il pallone in rete da distanza molto ravvicinata, in modo molto facile.</p>
+
+<a name="tiroeffetto"></a><h6>TIRO AD EFFETTO</h6>
+
+  <p class="contenuto">Il tiro dal effetto è un tiro che ha una traiettoria con un cambio improvviso di direzione, dato dal movimento rotatorio dato alla palla. Questo tiro è molto efficace perché spesso sorprende il portiere. Il più famoso di questi è il "tiro a giro", in cui la palla traccia un arco a rientrare verso la porta.
+</p>
+
+<a name="stop"></a><h6>STOP</h6>
+
+  <p class="contenuto">Lo stop è il gesto che permette di controllare la palla, "stoppandola" appunto. Lo stop si può eseguire di petto, con la coscia o con i piedi.
+</p>   
+
+</section>
+
+<!--FOOTER-->
+<footer>
+  <div class="col">
+    <div class="row">
+  <form action="documentazione.html"><button type="submit" class="btn btn-primary footer" data-bs-toggle="button" autocomplete="off" id="doc">Il progetto - documentazione</button>
+  </form> 
+  <form action="presentazione.html"><button type="submit" class="btn btn-primary footer" data-bs-toggle="button" autocomplete="off">Chi sono</button>
+</form>
+<a href=""><i class="fab fa-instagram"></i></a>
+</div>
+<div class="row">
+<P class="footer">Tutti i diritti riservati. Tutti i marchi e i nomi menzionati appartengono ai rispettivi proprietari.</P>
+</div>
+</div>
+</footer>
+</body>
+</html>
