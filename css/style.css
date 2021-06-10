@@ -486,6 +486,12 @@ p.contenuto i {
 	clear: left;
 }
 
+@media (max-width: 860px){
+	.titolo, h6{
+		margin-left: 10%;
+	}
+}
+
 .sticky-top {
 	z-index: 1 !important;
 }
@@ -539,6 +545,7 @@ ul {
 	padding: 10px;
 	border-radius: 5px;
 	border: 1px solid #0bda95;
+	margin-right: 10px;
 }
 .elementoprincipale {
 	margin-bottom: 10px;
