@@ -246,7 +246,17 @@ p.footer{
 	margin-top: 5px;
 }
 
-
+@media (max-width: 860px){
+	.footer {
+		bottom: 0px !important;
+	} 
+	footer div form button {
+		margin-bottom: 5px;
+	}
+	footer {
+		height: auto;
+	}
+}
 
 								/*contenuti HOMEPAGE*/
 
@@ -685,7 +695,7 @@ h6.moduli {
 	margin-bottom: 35px !important;
 }
 
-/*documentazione*/
+			/*documentazione*/
 
 #architettura {
 	margin-left: 15%;
@@ -703,4 +713,9 @@ h6.moduli {
 
 .row {
 	margin-right: 0px !important;
+}
+@media (max-width: 860px){
+	.iniziodoc {
+		padding-left: 15%;
+	}
 }
