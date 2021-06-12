@@ -703,7 +703,7 @@ h6.moduli {
 
 			/*documentazione*/
 
-#architettura {
+#imgdoc {
 	margin-left: 15%;
 	max-width: 55%;
 	height: auto;
@@ -713,8 +713,8 @@ h6.moduli {
 	width: 50%;
 	height: auto;}
 
-#documentazione {
-	margin-left: 150px;
+.documentazione {
+	margin-left: 20% !important;
 }
 
 .row {
