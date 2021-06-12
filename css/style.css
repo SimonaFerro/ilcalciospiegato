@@ -719,8 +719,8 @@ h6.moduli {
 .row {
 	margin-right: 0px !important;
 }
+
 @media (max-width: 860px){
 	.iniziodoc {
 		padding-left: 25%;
 	}
-}
